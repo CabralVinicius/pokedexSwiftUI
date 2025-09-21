@@ -29,7 +29,7 @@ struct OnboardingView: View {
                         }
 
                         let step = viewModel.onboardingSteps[index]
-                        makeView(title: step.title, description: step.description)
+                        TitleDescriptionView(title: step.title, description: step.description)
                     }
                     .tag(index)
                 }
@@ -130,21 +130,6 @@ extension OnboardingView {
                         .offset(x: 50, y: 115)
                 }
         }
-    }
-
-    func makeView(title: String, description: String) -> some View {
-        VStack(spacing: 16) {
-            Text(title)
-                .font(Font.custom("Poppins-Medium", size: 26))
-                .multilineTextAlignment(.center)
-                .foregroundStyle(Color("AppPrimary"))
-
-            Text(description)
-                .font(Font.custom("Poppins-Regular", size: 14))
-                .multilineTextAlignment(.center)
-                .foregroundStyle(Color("AppSecondary"))
-        }
-        .padding(.horizontal, 16)
     }
 }
 

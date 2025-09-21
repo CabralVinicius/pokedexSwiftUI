@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-internal import Combine
+import Combine
 
 class OnboardingViewModel: ObservableObject {
     @Published var currentStep: Int = 0
