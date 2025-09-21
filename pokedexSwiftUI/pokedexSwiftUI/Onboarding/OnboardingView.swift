@@ -9,86 +9,85 @@ import SwiftUI
 
 struct OnboardingView: View {
     @ObservedObject var viewModel: OnboardingViewModel
-    @State var offset: CGFloat = 0
+
     private let dotWidth: CGFloat = 9
     private let dotHeight: CGFloat = 9
     private let dotSpacing: CGFloat = 25
-    
+    private let sliderWidth: CGFloat = 23
+
     var body: some View {
-        Spacer().frame(height: 175)
-        VStack{
+        VStack(spacing: 0) {
+            Spacer().frame(height: 175)
+
             TabView(selection: $viewModel.currentStep) {
-                ForEach(0..<viewModel.onboardingSteps.count, id: \.self) { index in
-                    VStack {
+                ForEach(viewModel.onboardingSteps.indices, id: \.self) { index in
+                    VStack(spacing: 24) {
                         if index == 0 {
                             trainersImages()
-                                .overlay(
-                                    GeometryReader{proxy -> Color in
-                                        let minX = proxy.frame(in: .global).minX
-                                        DispatchQueue.main.async{
-                                            withAnimation(.default){
-                                                self.offset = -minX
-                                            }
-                                        }
-                                        return Color.clear
-                                    }
-                                )
                         } else if index == 1 {
                             trainersStepTwo()
                         }
-                        
+
                         let step = viewModel.onboardingSteps[index]
                         makeView(title: step.title, description: step.description)
                     }
+                    .tag(index)
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .overlay(
+
+            ZStack(alignment: .bottom) {
                 HStack(spacing: dotSpacing) {
                     ForEach(viewModel.onboardingSteps.indices, id: \.self) { index in
                         Capsule()
-                            .fill(dotColor(at: index))
-                            .frame(width: getIndex() == index ? 25 : dotWidth, height: dotHeight)
+                            .fill(index == viewModel.currentStep ? Color("DarkBlue") : .gray)
+                            .frame(width: index == viewModel.currentStep ? 25 : dotWidth,
+                                   height: dotHeight)
+                            .animation(.easeInOut(duration: 0.25), value: viewModel.currentStep)
                     }
                 }
-                    .overlay(
-                        Capsule()
-                            .fill(Color("DarkBlue"))
-                            .frame(width: 23, height: dotHeight)
-                            .offset(x: sliderX())
-                            .animation(.easeInOut(duration: 0.25), value: getIndex())
-                    )
-                    .padding(.bottom, 10), alignment: .bottom
-            )
-            
-            VStack{
+                .padding(.bottom, 10)
+
+                if viewModel.onboardingSteps.count > 1 {
+                    Capsule()
+                        .fill(Color("DarkBlue"))
+                        .frame(width: sliderWidth, height: dotHeight)
+                        .offset(x: sliderX)
+                        .padding(.bottom, 10)
+                        .allowsHitTesting(false)
+                        .animation(.easeInOut(duration: 0.25), value: viewModel.currentStep)
+                }
+            }
+
+            VStack {
                 Spacer().frame(height: 45)
                 continueButton
                     .padding(.horizontal, 16)
             }
+            .frame(maxWidth: .infinity, alignment: .bottom)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        .padding(.horizontal, 16)
+        .onAppear {
+            if viewModel.onboardingSteps.isEmpty {
+                viewModel.currentStep = 0
+            } else {
+                viewModel.currentStep = min(viewModel.currentStep, viewModel.onboardingSteps.count - 1)
+            }
+        }
     }
-    
-    func getIndex() -> Int {
-        let raw = Int(round(offset / getWidth()))
-        return min(max(raw, 0), viewModel.onboardingSteps.count - 1)
-    }
-    
-    func sliderX() -> CGFloat {
-        let progress = max(0, min(offset / getWidth(), CGFloat(viewModel.onboardingSteps.count - 1)))
-        return progress * (dotWidth + dotSpacing)
-    }
-    
-    func dotColor(at index: Int) -> Color {
-        index == getIndex() ? Color("DarkBlue") : .gray
+
+    // SliderX baseado no índice discreto
+    private var sliderX: CGFloat {
+        let idx = CGFloat(viewModel.currentStep)
+        let step = (dotWidth + dotSpacing)
+        return idx * step
     }
 }
 
 // MARK: - continueButton
-var continueButton: some View {
+private var continueButton: some View {
     Button(action: {
-        
+        // ação (pular para próxima tela, etc.)
     }, label: {
         Rectangle()
             .frame(height: 58)
@@ -102,60 +101,50 @@ var continueButton: some View {
     })
 }
 
-// MARK: - OnboardingView Methods
-extension OnboardingView{
+// MARK: - OnboardingView Methods (placeholders iguais aos seus)
+extension OnboardingView {
     func trainersStepTwo() -> some View {
-        ZStack{
+        ZStack {
             Image("treinadora1")
                 .offset(x: 10)
-                .background{
+                .background {
                     Image("sombra")
                         .offset(x: 5, y: 115)
                 }
         }
     }
-    
+
     func trainersImages() -> some View {
-        ZStack{
+        ZStack {
             Image("treinador1")
                 .offset(x: -50)
-                .background{
+                .background {
                     Image("sombra")
                         .offset(x: -65, y: 110)
                 }
-            
+
             Image("treinador2")
                 .offset(x: 50, y: -10)
-                .background{
+                .background {
                     Image("sombra")
                         .offset(x: 50, y: 115)
                 }
         }
     }
-    
-    func makeView(title: String, description: String) -> some View {
-        var titleAndDescription: some View {
-            VStack(spacing: 16){
-                Text(title)
-                    .font(Font.custom("Poppins-Medium", size: 26))
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(Color("AppPrimary"))
-                
-                Text(description)
-                    .font(Font.custom("Poppins-Regular", size: 14))
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(Color("AppSecondary"))
-            }
-            .padding(.horizontal, 16)
-        }
-        
-        return titleAndDescription
-    }
-}
 
-extension View{
-    func getWidth() -> CGFloat {
-        return UIScreen.main.bounds.width
+    func makeView(title: String, description: String) -> some View {
+        VStack(spacing: 16) {
+            Text(title)
+                .font(Font.custom("Poppins-Medium", size: 26))
+                .multilineTextAlignment(.center)
+                .foregroundStyle(Color("AppPrimary"))
+
+            Text(description)
+                .font(Font.custom("Poppins-Regular", size: 14))
+                .multilineTextAlignment(.center)
+                .foregroundStyle(Color("AppSecondary"))
+        }
+        .padding(.horizontal, 16)
     }
 }
 
