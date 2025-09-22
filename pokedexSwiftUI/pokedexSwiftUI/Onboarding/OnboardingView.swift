@@ -9,7 +9,6 @@ import SwiftUI
 
 struct OnboardingView: View {
     @ObservedObject var viewModel: OnboardingViewModel
-
     private let dotWidth: CGFloat = 9
     private let dotHeight: CGFloat = 9
     private let dotSpacing: CGFloat = 25
@@ -18,14 +17,13 @@ struct OnboardingView: View {
     var body: some View {
         VStack(spacing: 0) {
             Spacer().frame(height: 175)
-
             TabView(selection: $viewModel.currentStep) {
                 ForEach(viewModel.onboardingSteps.indices, id: \.self) { index in
                     VStack(spacing: 24) {
                         if index == 0 {
-                            trainersImages()
+                            MakeTraningImage(firstImage: "treinador1", secondImage: "treinador2")
                         } else if index == 1 {
-                            trainersStepTwo()
+                            MakeTraningImage(firstImage: "treinadora1")
                         }
 
                         let step = viewModel.onboardingSteps[index]
@@ -76,7 +74,6 @@ struct OnboardingView: View {
         }
     }
 
-    // SliderX baseado no índice discreto
     private var sliderX: CGFloat {
         let idx = CGFloat(viewModel.currentStep)
         let step = (dotWidth + dotSpacing)
@@ -99,38 +96,6 @@ private var continueButton: some View {
                     .font(Font.custom("Poppins-SemiBold", size: 18))
             }
     })
-}
-
-// MARK: - OnboardingView Methods (placeholders iguais aos seus)
-extension OnboardingView {
-    func trainersStepTwo() -> some View {
-        ZStack {
-            Image("treinadora1")
-                .offset(x: 10)
-                .background {
-                    Image("sombra")
-                        .offset(x: 5, y: 115)
-                }
-        }
-    }
-
-    func trainersImages() -> some View {
-        ZStack {
-            Image("treinador1")
-                .offset(x: -50)
-                .background {
-                    Image("sombra")
-                        .offset(x: -65, y: 110)
-                }
-
-            Image("treinador2")
-                .offset(x: 50, y: -10)
-                .background {
-                    Image("sombra")
-                        .offset(x: 50, y: 115)
-                }
-        }
-    }
 }
 
 #Preview {
