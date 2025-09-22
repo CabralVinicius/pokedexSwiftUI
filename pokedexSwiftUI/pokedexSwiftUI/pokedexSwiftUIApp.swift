@@ -9,9 +9,23 @@ import SwiftUI
 
 @main
 struct pokedexSwiftUIApp: App {
+    @StateObject private var nav = AppNavigator()
+
     var body: some Scene {
         WindowGroup {
-            OnboardingView(viewModel: OnboardingViewModel())
+            NavigationStack(path: $nav.path) {
+                RootHostView()
+                    .navigationDestination(for: AppRoute.self) { route in
+                        nav.destination(route)
+                    }
+                    .sheet(item: $nav.sheet) { route in
+                        nav.destination(route)
+                    }
+                    .fullScreenCover(item: $nav.cover) { route in
+                        nav.destination(route)
+                    }
+            }
+            .environmentObject(nav)
         }
     }
 }

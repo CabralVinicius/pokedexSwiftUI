@@ -14,7 +14,7 @@ struct LoginOrRegisterView: View {
         VStack{
             jumpButtonView
             Spacer().frame(height: 175)
-            traningImageView
+            MakeTraningImage(firstImage: ImageKey.femaleCoachTwo.rawValue, secondImage: ImageKey.maleCoachThree.rawValue)
             TitleDescriptionView(title: viewModel.loginOrRegisterInformations.title, description: viewModel.loginOrRegisterInformations.description)
             Spacer().frame(height: 45)
             createAccount
@@ -42,24 +42,6 @@ struct LoginOrRegisterView: View {
         }
         .padding(.horizontal, 16)
     }
-    
-    var traningImageView: some View {
-        ZStack {
-            Image("treinadora2")
-                .offset(x: -50)
-                .background {
-                    Image("sombra")
-                        .offset(x: -65, y: 110)
-                }
-
-            Image("treinador3")
-                .offset(x: 50, y: -10)
-                .background {
-                    Image("sombra")
-                        .offset(x: 50, y: 115)
-                }
-        }
-    }    
     
     private var createAccount: some View {
         Button(action: {

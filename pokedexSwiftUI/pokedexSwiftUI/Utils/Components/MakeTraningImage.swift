@@ -20,24 +20,24 @@ struct MakeTraningImage: View {
         ZStack {
             if let secondImage {
                 Image(firstImage)
-                    .offset(x: -50)
+                    .offset(x: -55)
                     .background {
-                        Image("sombra")
-                            .offset(x: -65, y: 110)
+                        Image(ImageKey.shadow.rawValue)
+                            .offset(x: -60, y: 120)
                     }
                 
                 Image(secondImage)
-                    .offset(x: 50, y: -10)
+                    .offset(x: 55, y: -10)
                     .background {
-                        Image("sombra")
-                            .offset(x: 50, y: 115)
+                        Image(ImageKey.shadow.rawValue)
+                            .offset(x: 65, y: 115)
                     }
             } else {
                 ZStack {
                     Image(firstImage)
                         .offset(x: 10)
                         .background {
-                            Image("sombra")
+                            Image(ImageKey.shadow.rawValue)
                                 .offset(x: 5, y: 115)
                         }
                 }
