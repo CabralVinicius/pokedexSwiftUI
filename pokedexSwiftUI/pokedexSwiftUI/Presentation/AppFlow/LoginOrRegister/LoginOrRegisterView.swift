@@ -17,8 +17,8 @@ struct LoginOrRegisterView: View {
         VStack{
             jumpButtonView
             Spacer().frame(height: 175)
-            MakeTraningImage(firstImage: ImageKey.femaleCoachTwo.rawValue, secondImage: ImageKey.maleCoachThree.rawValue)
-            TitleDescriptionView(title: viewModel.loginOrRegisterInformations.title, description: viewModel.loginOrRegisterInformations.description)
+            MakeTrainingImage(firstImage: ImageKey.femaleCoachTwo.rawValue, secondImage: ImageKey.maleCoachThree.rawValue)
+            TitleDescriptionView(title: viewModel.loginOrRegisterInformations.titleKey, description: viewModel.loginOrRegisterInformations.descriptionKey)
             Spacer().frame(height: 45)
             createAccount
             Spacer().frame(height: defaultPadding)

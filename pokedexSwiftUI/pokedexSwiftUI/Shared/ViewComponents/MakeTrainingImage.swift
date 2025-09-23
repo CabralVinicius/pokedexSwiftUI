@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MakeTraningImage: View {
+struct MakeTrainingImage: View {
     let firstImage: String
     let secondImage: String?
     
@@ -47,5 +47,5 @@ struct MakeTraningImage: View {
 }
 
 #Preview {
-    MakeTraningImage(firstImage: "treinador4", secondImage: "treinador3")
+    MakeTrainingImage(firstImage: "treinador4", secondImage: "treinador3")
 }

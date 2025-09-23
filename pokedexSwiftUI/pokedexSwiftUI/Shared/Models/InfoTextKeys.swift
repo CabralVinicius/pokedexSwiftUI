@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TextAndDescriptionModel{
-    var title: String
-    var description: String
+struct InfoTextKeys: Equatable{
+    var titleKey: String
+    var descriptionKey: String
 }

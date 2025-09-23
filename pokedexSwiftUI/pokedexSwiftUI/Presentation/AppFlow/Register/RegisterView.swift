@@ -16,8 +16,8 @@ struct RegisterView: View {
     var body: some View {
         VStack{
             Spacer().frame(height: 90)
-            MakeTraningImage(firstImage: ImageKey.maleCoachFive.rawValue)
-            TitleDescriptionView(title: viewModel.loginOrRegisterInformations.title, description: viewModel.loginOrRegisterInformations.description)
+            MakeTrainingImage(firstImage: ImageKey.maleCoachFive.rawValue)
+            TitleDescriptionView(title: viewModel.loginOrRegisterInformations.titleKey, description: viewModel.loginOrRegisterInformations.descriptionKey)
             Spacer().frame(height: 45)
             createAccountWithApple
             createAccountWithGoogle

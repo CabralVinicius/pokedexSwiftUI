@@ -23,12 +23,12 @@ struct OnboardingView: View {
                 ForEach(viewModel.onboardingSteps.enumerated(), id: \.offset) { index, step in
                     VStack(spacing: dotSpacing) {
                         if index == 0 {
-                            MakeTraningImage(firstImage: ImageKey.maleCoachOne.rawValue, secondImage: ImageKey.maleCoachTwo.rawValue)
+                            MakeTrainingImage(firstImage: ImageKey.maleCoachOne.rawValue, secondImage: ImageKey.maleCoachTwo.rawValue)
                         } else if index == 1 {
-                            MakeTraningImage(firstImage: ImageKey.femaleCoachOne.rawValue)
+                            MakeTrainingImage(firstImage: ImageKey.femaleCoachOne.rawValue)
                         }
                         
-                        TitleDescriptionView(title: step.title, description: step.description)
+                        TitleDescriptionView(title: step.titleKey, description: step.descriptionKey)
                             .padding(.bottom, 20)
                     }
                     .tag(index)

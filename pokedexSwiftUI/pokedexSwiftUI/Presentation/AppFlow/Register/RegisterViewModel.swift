@@ -6,14 +6,13 @@
 //
 
 import Foundation
-import SwiftUI
 import Combine
 
 class RegisterViewModel: ObservableObject {
-    @Published var loginOrRegisterInformations: TextAndDescriptionModel =
-    TextAndDescriptionModel(
-        title: "Falta pouco para\nexplorar esse mundo!",
-        description: "Como deseja se conectar?"
+    @Published var loginOrRegisterInformations: InfoTextKeys =
+    InfoTextKeys(
+        titleKey: "Falta pouco para\nexplorar esse mundo!",
+        descriptionKey: "Como deseja se conectar?"
     )
     
     func teste(){
