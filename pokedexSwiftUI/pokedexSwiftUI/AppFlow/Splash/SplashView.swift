@@ -12,7 +12,7 @@ struct SplashView: View {
     
     var body: some View {
         ZStack{
-            Color("BackgroundBlue")
+            Color(ColorsNames.backgroundBlue)
             Image(ImageKey.logoSplash.rawValue)
                 .resizable()
                 .frame(width: 192, height: 71)

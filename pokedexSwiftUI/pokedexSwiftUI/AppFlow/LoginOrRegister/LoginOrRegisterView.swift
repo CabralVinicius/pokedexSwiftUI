@@ -9,6 +9,9 @@ import SwiftUI
 
 struct LoginOrRegisterView: View {
     @ObservedObject var viewModel: LoginOrRegisterViewModel
+    private let defaultPadding: CGFloat = 16
+    private let fontSize: CGFloat = 18
+    private let imageSize: CGFloat = 27
     
     var body: some View {
         VStack{
@@ -18,7 +21,7 @@ struct LoginOrRegisterView: View {
             TitleDescriptionView(title: viewModel.loginOrRegisterInformations.title, description: viewModel.loginOrRegisterInformations.description)
             Spacer().frame(height: 45)
             createAccount
-            Spacer().frame(height: 16)
+            Spacer().frame(height: defaultPadding)
             registerAccount
         }
     }
@@ -31,16 +34,16 @@ struct LoginOrRegisterView: View {
             }, label: {
                 HStack{
                     Text("Voltar")
-                        .font(Font.custom("Poppins-SemiBold", size: 18))
+                        .font(FontMaker.makeFont(.poppinsSemiBold, fontSize))
                         .foregroundStyle(.black)
 
                     Image(systemName: "arrow.forward")
-                        .frame(width: 27, height: 27)
+                        .frame(width: imageSize, height: imageSize)
                         .foregroundStyle(.black)
                 }
             })
         }
-        .padding(.horizontal, 16)
+        .padding(.horizontal, defaultPadding)
     }
     
     private var createAccount: some View {
@@ -50,14 +53,14 @@ struct LoginOrRegisterView: View {
             Rectangle()
                 .frame(height: 58)
                 .clipShape(.capsule)
-                .foregroundStyle(Color("DarkBlue"))
+                .foregroundStyle(ColorsNames.darkBlue)
                 .overlay {
                     Text("Criar conta")
                         .foregroundStyle(.white)
-                        .font(Font.custom("Poppins-SemiBold", size: 18))
+                        .font(FontMaker.makeFont(.poppinsSemiBold, fontSize))
                 }
-                .padding(.horizontal, 16)
-                .padding(.bottom, 15)
+                .padding(.horizontal, defaultPadding)
+                .padding(.bottom, defaultPadding)
         })
     }
     
@@ -66,11 +69,11 @@ struct LoginOrRegisterView: View {
             // ação (pular para próxima tela, etc.)
         }, label: {
                     Text("Ja tenho uma conta")
-                .foregroundStyle(Color("DarkBlue"))
-                        .font(Font.custom("Poppins-SemiBold", size: 18))
+                .foregroundStyle(ColorsNames.darkBlue)
+                .font(FontMaker.makeFont(.poppinsSemiBold, fontSize))
         })
-        .padding(.horizontal, 16)
-        .padding(.bottom, 15)
+        .padding(.horizontal, defaultPadding)
+        .padding(.bottom, defaultPadding)
     }
 }
 

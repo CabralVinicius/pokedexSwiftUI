@@ -31,7 +31,7 @@ struct AppRouter {
         case .authLanding:
             LoginOrRegisterView(viewModel: LoginOrRegisterViewModel())
         case .register:
-            RegisterView()
+            RegisterView(viewModel: RegisterViewModel())
         case .login:
             LoginAccountView()
         //case .home:

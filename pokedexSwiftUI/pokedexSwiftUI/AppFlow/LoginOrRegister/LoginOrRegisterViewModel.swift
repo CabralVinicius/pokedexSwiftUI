@@ -10,8 +10,8 @@ import SwiftUI
 import Combine
 
 class LoginOrRegisterViewModel: ObservableObject {
-    @Published var loginOrRegisterInformations: OnboardingStepModel =
-    OnboardingStepModel(
+    @Published var loginOrRegisterInformations: TextAndDescriptionModel =
+    TextAndDescriptionModel(
         title: "Está pronto para essa aventura?",
         description: "Basta criar uma conta e começar a explorar o mundo dos Pokémon hoje!"
     )

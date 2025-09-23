@@ -14,12 +14,13 @@ struct OnboardingView: View {
     private let dotSpacing: CGFloat = 25
     private let sliderWidth: CGFloat = 23
     private let duration: TimeInterval = 0.25
+    private let defaultPadding: CGFloat = 16
     
     var body: some View {
         VStack(spacing: 0) {
             Spacer().frame(height: 175)
             TabView(selection: $viewModel.currentStep) {
-                ForEach(viewModel.onboardingSteps.indices, id: \.self) { index in
+                ForEach(viewModel.onboardingSteps.enumerated(), id: \.offset) { index, step in
                     VStack(spacing: dotSpacing) {
                         if index == 0 {
                             MakeTraningImage(firstImage: ImageKey.maleCoachOne.rawValue, secondImage: ImageKey.maleCoachTwo.rawValue)
@@ -27,8 +28,8 @@ struct OnboardingView: View {
                             MakeTraningImage(firstImage: ImageKey.femaleCoachOne.rawValue)
                         }
                         
-                        let step = viewModel.onboardingSteps[index]
                         TitleDescriptionView(title: step.title, description: step.description)
+                            .padding(.bottom, 20)
                     }
                     .tag(index)
                 }
@@ -39,40 +40,34 @@ struct OnboardingView: View {
                 HStack(spacing: dotSpacing) {
                     ForEach(viewModel.onboardingSteps.indices, id: \.self) { index in
                         Capsule()
-                            .fill(index == viewModel.currentStep ? Color("DarkBlue") : .gray)
+                            .fill(index == viewModel.currentStep ? ColorsNames.darkBlue : .gray)
                             .frame(width: index == viewModel.currentStep ? dotSpacing : dotWidth,
                                    height: dotHeight)
                             .animation(.easeInOut(duration: duration), value: viewModel.currentStep)
                     }
                 }
-                .padding(.bottom, 10)
+                .padding(.bottom, defaultPadding)
                 
                 if viewModel.onboardingSteps.count > 1 {
                     Capsule()
-                        .fill(Color("DarkBlue"))
+                        .fill(ColorsNames.darkBlue)
                         .frame(width: sliderWidth, height: dotHeight)
                         .offset(x: sliderX)
-                        .padding(.bottom, 10)
                         .allowsHitTesting(false)
                         .animation(.easeInOut(duration: duration), value: viewModel.currentStep)
+                        .padding(.bottom, defaultPadding)
                 }
             }
             
             VStack {
-                Spacer().frame(height: 45)
+                Spacer().frame(height: defaultPadding)
                 continueButton
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal, defaultPadding)
             }
             .frame(maxWidth: .infinity, alignment: .bottom)
         }
-        .padding(.horizontal, 16)
-        .onAppear {
-            if viewModel.onboardingSteps.isEmpty {
-                viewModel.currentStep = 0
-            } else {
-                viewModel.currentStep = min(viewModel.currentStep, viewModel.onboardingSteps.count - 1)
-            }
-        }
+        .padding(.horizontal, defaultPadding)
+
     }
     
     private var sliderX: CGFloat {
@@ -90,11 +85,11 @@ private var continueButton: some View {
         Rectangle()
             .frame(height: 58)
             .clipShape(.capsule)
-            .foregroundStyle(Color("DarkBlue"))
+            .foregroundStyle(ColorsNames.darkBlue)
             .overlay {
                 Text("Continuar")
                     .foregroundStyle(.white)
-                    .font(Font.custom("Poppins-SemiBold", size: 18))
+                    .font(FontMaker.makeFont(.poppinsSemiBold, 18))
             }
     })
 }

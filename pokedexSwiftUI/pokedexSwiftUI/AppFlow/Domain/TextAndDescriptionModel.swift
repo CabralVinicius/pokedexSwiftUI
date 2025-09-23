@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct OnboardingStepModel{
+struct TextAndDescriptionModel{
     var title: String
     var description: String
 }
