@@ -24,7 +24,13 @@ struct RegisterView: View {
             createAccountWithEmailAndPassword
         }
     }
-        
+}
+
+#Preview {
+    RegisterView(viewModel: RegisterViewModel())
+}
+
+extension RegisterView {
     private var createAccountWithApple: some View {
         CapsuleButton(
             title: "Continuar com a Apple",
@@ -72,8 +78,4 @@ struct RegisterView: View {
         .padding(.horizontal, defaultPadding)
         .padding(.bottom, 5)
     }
-}
-
-#Preview {
-    RegisterView(viewModel: RegisterViewModel())
 }
