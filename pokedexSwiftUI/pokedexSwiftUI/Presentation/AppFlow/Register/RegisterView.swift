@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @ObservedObject var viewModel: RegisterViewModel
+    var isLogin: Bool
     private let defaultPadding: CGFloat = 16
     private let fontSize: CGFloat = 18
     private let imageSize: CGFloat = 27
@@ -16,8 +17,12 @@ struct RegisterView: View {
     var body: some View {
         VStack{
             Spacer().frame(height: 90)
-            MakeTrainingImage(firstImage: ImageKey.maleCoachFive.rawValue)
-            TitleDescriptionView(title: viewModel.loginOrRegisterInformations.titleKey, description: viewModel.loginOrRegisterInformations.descriptionKey)
+            MakeTrainingImage(
+                firstImage:
+                    isLogin ?
+                ImageKey.maleCoachFive.rawValue :
+                ImageKey.maleCoachFour.rawValue)
+            TitleDescriptionView(title: isLogin ? viewModel.loginOrRegisterInformations[0].titleKey : viewModel.loginOrRegisterInformations[1].titleKey, description: viewModel.loginOrRegisterInformations[0].descriptionKey)
             Spacer().frame(height: 45)
             createAccountWithApple
             createAccountWithGoogle
@@ -27,7 +32,11 @@ struct RegisterView: View {
 }
 
 #Preview {
-    RegisterView(viewModel: RegisterViewModel())
+    RegisterView(viewModel: RegisterViewModel(), isLogin: true)
+}
+
+#Preview {
+    RegisterView(viewModel: RegisterViewModel(), isLogin: false)
 }
 
 extension RegisterView {

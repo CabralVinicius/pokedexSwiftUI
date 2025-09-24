@@ -9,11 +9,14 @@ import Foundation
 import Combine
 
 class RegisterViewModel: ObservableObject {
-    @Published var loginOrRegisterInformations: InfoTextKeys =
+    @Published var loginOrRegisterInformations: [InfoTextKeys] = [
     InfoTextKeys(
         titleKey: "Falta pouco para\nexplorar esse mundo!",
-        descriptionKey: "Como deseja se conectar?"
-    )
+        descriptionKey: "Como deseja se conectar?"),
+    InfoTextKeys(
+        titleKey: "Que bom te ver aqui novamente!",
+        descriptionKey: "Como deseja se conectar?")
+    ]
     
     func teste(){
         print("teste")

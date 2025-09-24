@@ -31,9 +31,9 @@ struct AppRouter {
         case .authLanding:
             LoginOrRegisterView(viewModel: LoginOrRegisterViewModel())
         case .register:
-            RegisterView(viewModel: RegisterViewModel())
+            RegisterView(viewModel: RegisterViewModel(), isLogin: false)
         case .login:
-            LoginAccountView()
+            RegisterView(viewModel: RegisterViewModel(), isLogin: true)
         //case .home:
             //HomeView() // crie depois
         //case .pokemonDetail(let id):
