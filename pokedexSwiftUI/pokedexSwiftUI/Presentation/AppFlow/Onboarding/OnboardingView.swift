@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @ObservedObject var viewModel: OnboardingViewModel
+    @EnvironmentObject var nav: AppNavigator
     private let dotWidth: CGFloat = 9
     private let dotHeight: CGFloat = 9
     private let dotSpacing: CGFloat = 25
@@ -67,7 +68,7 @@ struct OnboardingView: View {
             .frame(maxWidth: .infinity, alignment: .bottom)
         }
         .padding(.horizontal, defaultPadding)
-
+        
     }
     
     private var sliderX: CGFloat {
@@ -78,22 +79,24 @@ struct OnboardingView: View {
 }
 
 // MARK: - continueButton
-private var continueButton: some View {
-    Button(action: {
-        // ação (pular para próxima tela, etc.)
-    }, label: {
-        Rectangle()
-            .frame(height: 58)
-            .clipShape(.capsule)
-            .foregroundStyle(ColorsNames.darkBlue)
-            .overlay {
-                Text("Continuar")
-                    .foregroundStyle(.white)
-                    .font(FontMaker.makeFont(.poppinsSemiBold, 18))
-            }
-    })
+extension OnboardingView{
+    private var continueButton: some View {
+        Button(action: {
+            OnboardingCoordinator(nav: nav).start()
+        }, label: {
+            Rectangle()
+                .frame(height: 58)
+                .clipShape(.capsule)
+                .foregroundStyle(ColorsNames.darkBlue)
+                .overlay {
+                    Text("Continuar")
+                        .foregroundStyle(.white)
+                        .font(FontMaker.makeFont(.poppinsSemiBold, 18))
+                }
+        })
+    }
 }
 
 #Preview {
-    OnboardingView(viewModel: OnboardingViewModel())
+    OnboardingView(viewModel: OnboardingViewModel()).environmentObject(AppNavigator())
 }

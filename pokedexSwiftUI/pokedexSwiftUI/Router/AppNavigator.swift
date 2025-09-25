@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 
+@MainActor
 final class AppNavigator: ObservableObject {
     @Published var root: AppRoute = .splash
     @Published var path = NavigationPath()
@@ -19,7 +20,9 @@ final class AppNavigator: ObservableObject {
 
     func setRoot(_ route: AppRoute) {
         root = route
-        path = NavigationPath() // clean stack
+        path = NavigationPath()
+        sheet = nil               
+        cover = nil
     }
 
     func push(_ route: AppRoute) { path.append(route) }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @ObservedObject var viewModel: RegisterViewModel
+    @EnvironmentObject var nav: AppNavigator
     var isLogin: Bool
     private let defaultPadding: CGFloat = 16
     private let fontSize: CGFloat = 18
@@ -33,10 +34,12 @@ struct RegisterView: View {
 
 #Preview {
     RegisterView(viewModel: RegisterViewModel(), isLogin: true)
+        .environmentObject(AppNavigator())
 }
 
 #Preview {
     RegisterView(viewModel: RegisterViewModel(), isLogin: false)
+        .environmentObject(AppNavigator())
 }
 
 extension RegisterView {
