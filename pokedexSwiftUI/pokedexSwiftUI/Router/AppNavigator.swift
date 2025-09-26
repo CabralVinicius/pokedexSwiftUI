@@ -5,23 +5,30 @@
 //  Created by Vinicius Cabral on 22/09/25.
 //
 
-import Foundation
 import SwiftUI
 import Combine
 
+// Contrato para navegação (DIP)
+protocol Navigating: AnyObject {
+    func setRoot(_ route: AppRoute)
+    func push(_ route: AppRoute)
+    func pop()
+    func popToRoot()
+    func present(_ route: AppRoute)
+    func fullCover(_ route: AppRoute)
+}
+
 @MainActor
-final class AppNavigator: ObservableObject {
+final class AppNavigator: ObservableObject, Navigating {
     @Published var root: AppRoute = .splash
     @Published var path = NavigationPath()
     @Published var sheet: AppRoute?
     @Published var cover: AppRoute?
 
-    private let router = AppRouter()
-
     func setRoot(_ route: AppRoute) {
         root = route
         path = NavigationPath()
-        sheet = nil               
+        sheet = nil
         cover = nil
     }
 
@@ -31,9 +38,4 @@ final class AppNavigator: ObservableObject {
 
     func present(_ route: AppRoute) { sheet = route }
     func fullCover(_ route: AppRoute) { cover = route }
-
-    @ViewBuilder
-    func destination(_ route: AppRoute) -> some View {
-        router.view(for: route)
-    }
 }

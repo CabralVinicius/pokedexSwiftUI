@@ -9,10 +9,11 @@ import SwiftUI
 
 struct RootHostView: View {
     @EnvironmentObject var nav: AppNavigator
+    let router: AppRouter
 
     var body: some View {
         ZStack {
-            nav.destination(nav.root)
+            router.view(for: nav.root)
                 .id(nav.root)
                 .transition(.asymmetric(
                     insertion: .move(edge: .trailing).combined(with: .opacity),

@@ -5,23 +5,12 @@
 //  Created by Vinicius Cabral on 24/09/25.
 //
 
-import SwiftUI
-import Combine
+import Foundation
 
-protocol OnboardingCoordinatoring {
-    func start()
-}
-
-final class OnboardingCoordinator: OnboardingCoordinatoring, ObservableObject {
-    private let nav: AppNavigator
-    
-    init(nav: AppNavigator) {
-        self.nav = nav
-    }
-    
-    func start() {
-        withAnimation {
-                self.nav.setRoot(.loginOrRegister)
-        }
+final class OnboardingCoordinator: OnboardingCoordinating {
+    private let nav: Navigating
+    init(nav: Navigating) { self.nav = nav }
+    func goToLoginOrRegister() {
+        //nav.setRoot(.loginOrRegister)
     }
 }

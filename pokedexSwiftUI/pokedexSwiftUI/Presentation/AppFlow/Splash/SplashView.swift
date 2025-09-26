@@ -8,19 +8,14 @@
 import SwiftUI
 
 struct SplashView: View {
-    @EnvironmentObject var nav: AppNavigator
-    
     var body: some View {
-        ZStack{
+        ZStack {
             Color(ColorsNames.backgroundBlue)
             Image(ImageKey.logoSplash.rawValue)
                 .resizable()
                 .frame(width: 192, height: 71)
         }
         .ignoresSafeArea()
-        .onAppear {
-            SplashCoordinator(nav: nav).start()
-        }
     }
 }
 

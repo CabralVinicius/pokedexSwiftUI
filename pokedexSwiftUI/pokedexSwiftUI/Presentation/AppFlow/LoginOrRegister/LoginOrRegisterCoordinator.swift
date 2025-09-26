@@ -17,13 +17,13 @@ final class LoginOrRegisterCoordinator: ObservableObject {
     
     func register() {
         withAnimation {
-                self.nav.push(.register)
+                //self.nav.push(.register)
         }
     }
     
     func login() {
         withAnimation {
-            self.nav.push(.login)
+            //self.nav.push(.login)
         }
     }
     

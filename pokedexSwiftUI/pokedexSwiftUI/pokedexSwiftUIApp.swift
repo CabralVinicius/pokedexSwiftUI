@@ -13,19 +13,28 @@ struct pokedexSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
+            // Factories concretas
+            let splash = SplashFactoryLive(nav: nav)
+            let onboarding = OnboardingFactoryLive(nav: nav)
+
+            let router = AppRouter(
+                splashFactory: splash,
+                onboardingFactory: onboarding
+            )
+
             NavigationStack(path: $nav.path) {
-                RootHostView()
+                RootHostView(router: router)
+                    .environmentObject(nav)
                     .navigationDestination(for: AppRoute.self) { route in
-                        nav.destination(route)
+                        router.view(for: route)
                     }
                     .sheet(item: $nav.sheet) { route in
-                        nav.destination(route)
+                        router.view(for: route)
                     }
                     .fullScreenCover(item: $nav.cover) { route in
-                        nav.destination(route)
+                        router.view(for: route)
                     }
             }
-            .environmentObject(nav)
         }
     }
 }

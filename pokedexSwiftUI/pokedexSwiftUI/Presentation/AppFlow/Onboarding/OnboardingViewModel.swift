@@ -8,10 +8,38 @@
 import Foundation
 import Combine
 
-class OnboardingViewModel: ObservableObject {
-    @Published var currentStep: Int = 0
-    @Published var onboardingSteps: [InfoTextKeys] = [
-        InfoTextKeys(titleKey: "Todos os Pokémons em um só Lugar", descriptionKey: "Acesse uma vasta lista de Pokémon de todas as gerações já feitas pela Nintendo"),
-        InfoTextKeys(titleKey: "Mantenha sua\nPokédex atualizada", descriptionKey: "Cadastre-se e mantenha seu perfil, pokémon favoritos, configurações e muito mais, salvos no aplicativo, mesmo sem conexão com a internet.")
-    ]
+@MainActor
+final class OnboardingPresenter: ObservableObject {
+    @Published private(set) var state = OnboardingState()
+
+    weak var interactor: OnboardingBusinessLogic?
+    private let coordinator: OnboardingCoordinating
+
+    init(coordinator: OnboardingCoordinating) {
+        self.coordinator = coordinator
+    }
+
+    // Intents da View
+    func send(_ intent: OnboardingIntent) { Task { await interactor?.handle(intent) } }
+    func primaryTapped() { coordinator.goToLoginOrRegister() }
+}
+
+// MARK: - OnboardingPresenting (callbacks do interactor)
+extension OnboardingPresenter: OnboardingPresenting {
+    func presentLoading() {
+        state.isLoading = true
+        state.error = nil
+    }
+
+    func present(steps: [InfoTextKeys], current: Int) {
+        state.isLoading = false
+        state.error = nil
+        if !steps.isEmpty { state.steps = steps }
+        state.currentStep = max(0, min(current, max(state.steps.count - 1, 0)))
+    }
+
+    func present(error: String) {
+        state.isLoading = false
+        state.error = error
+    }
 }

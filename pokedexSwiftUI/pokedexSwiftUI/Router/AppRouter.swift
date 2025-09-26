@@ -6,34 +6,32 @@
 //
 
 import SwiftUI
+import Foundation
 
 enum AppRoute: Hashable, Identifiable {
     case splash
     case onboarding
-    case loginOrRegister
-    case register
-    case login
-    // case home
-    // case pokemonDetail(id: Int)
+    //case loginOrRegister   
 
     var id: String { String(describing: self) }
 }
 
+
 struct AppRouter {
+    let splashFactory: SplashFactory
+    let onboardingFactory: OnboardingFactory
+    // no futuro: let authFactory: AuthFactory, etc.
+
     @ViewBuilder
     func view(for route: AppRoute) -> some View {
         switch route {
         case .splash:
-            SplashView()
+            splashFactory.makeScene()
         case .onboarding:
-            OnboardingView(viewModel: OnboardingViewModel())
-                .navigationBarBackButtonHidden(true)
-        case .loginOrRegister:
-            LoginOrRegisterView(viewModel: LoginOrRegisterViewModel())
-        case .register:
-            RegisterView(viewModel: RegisterViewModel(), isLogin: false)
-        case .login:
-            RegisterView(viewModel: RegisterViewModel(), isLogin: true)
+            onboardingFactory.makeScene()
+//        case .loginOrRegister:
+//            // placeholder simples para não quebrar compilação
+//            AnyView(LoginOrRegisterScene())
         }
     }
 }
