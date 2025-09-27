@@ -16,7 +16,6 @@ struct LoginOrRegisterView: View {
     
     var body: some View {
         VStack{
-            jumpButtonView
             Spacer().frame(height: 175)
             MakeTrainingImage(firstImage: ImageKey.femaleCoachTwo.rawValue, secondImage: ImageKey.maleCoachThree.rawValue)
             TitleDescriptionView(title: viewModel.loginOrRegisterInformations.titleKey, description: viewModel.loginOrRegisterInformations.descriptionKey)
@@ -25,28 +24,11 @@ struct LoginOrRegisterView: View {
             Spacer().frame(height: defaultPadding)
             registerAccount
         }
-    }
-    
-    var jumpButtonView: some View {
-        HStack{
-            Spacer()
-            Button(action: {
-                LoginOrRegisterCoordinator(nav: nav).back()
-            }, label: {
-                HStack{
-                    Text("Voltar")
-                        .font(FontMaker.makeFont(.poppinsSemiBold, fontSize))
-                        .foregroundStyle(.black)
-
-                    Image(systemName: "arrow.forward")
-                        .frame(width: imageSize, height: imageSize)
-                        .foregroundStyle(.black)
-                }
-            })
+        .navToolbar(leadingTitle: "Voltar") {
+            LoginOrRegisterCoordinator(nav: nav).back()
         }
-        .padding(.horizontal, defaultPadding)
     }
-    
+
     private var loginAccount: some View {
         Button(action: {
             LoginOrRegisterCoordinator(nav: nav).login()
@@ -69,7 +51,7 @@ struct LoginOrRegisterView: View {
         Button(action: {
             LoginOrRegisterCoordinator(nav: nav).register()
         }, label: {
-                    Text("Ja tenho uma conta")
+            Text("Ja tenho uma conta")
                 .foregroundStyle(ColorsNames.darkBlue)
                 .font(FontMaker.makeFont(.poppinsSemiBold, fontSize))
         })

@@ -32,4 +32,8 @@ final class LoginOrRegisterCoordinator: ObservableObject {
             self.nav.pop()
         }
     }
+    
+    deinit{
+        print("🚫🚫 LoginOrRegisterCoordinator DESTRUIDO  🚫🚫")
+    }
 }

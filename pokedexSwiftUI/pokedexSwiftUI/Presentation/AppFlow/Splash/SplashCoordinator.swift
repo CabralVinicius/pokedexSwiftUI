@@ -22,4 +22,8 @@ final class SplashCoordinator: ObservableObject {
             }
         }
     }
+    
+    deinit{
+        print("🚫🚫 SplashCoordinator DESTRUIDO  🚫🚫")
+    }
 }

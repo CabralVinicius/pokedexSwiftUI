@@ -22,12 +22,15 @@ struct RegisterView: View {
                 firstImage:
                     isLogin ?
                 ImageKey.maleCoachFive.rawValue :
-                ImageKey.maleCoachFour.rawValue)
+                    ImageKey.maleCoachFour.rawValue)
             TitleDescriptionView(title: isLogin ? viewModel.loginOrRegisterInformations[0].titleKey : viewModel.loginOrRegisterInformations[1].titleKey, description: viewModel.loginOrRegisterInformations[0].descriptionKey)
             Spacer().frame(height: 45)
             createAccountWithApple
             createAccountWithGoogle
             createAccountWithEmailAndPassword
+        }
+        .navToolbar(centerTitle: isLogin ? "Cadastro" : "Login"){
+            RegisterCoordinator(nav: nav).back()
         }
     }
 }
@@ -71,7 +74,7 @@ extension RegisterView {
             font: FontMaker.makeFont(.poppinsSemiBold, fontSize),
             iconSize: 22
         ) {
-            // ação Google
+            print(isLogin ? "login" : "cadastro")
         }
         .padding(.horizontal, defaultPadding)
         .padding(.bottom, 5)

@@ -8,11 +8,7 @@
 import SwiftUI
 import Combine
 
-protocol OnboardingCoordinatoring {
-    func start()
-}
-
-final class OnboardingCoordinator: OnboardingCoordinatoring, ObservableObject {
+final class OnboardingCoordinator: ObservableObject {
     private let nav: AppNavigator
     
     init(nav: AppNavigator) {
@@ -21,7 +17,11 @@ final class OnboardingCoordinator: OnboardingCoordinatoring, ObservableObject {
     
     func start() {
         withAnimation {
-                self.nav.setRoot(.loginOrRegister)
+                self.nav.push(.loginOrRegister)
         }
+    }
+    
+    deinit{
+        print("🚫🚫 OnboardingCoordinator DESTRUIDO  🚫🚫")
     }
 }
