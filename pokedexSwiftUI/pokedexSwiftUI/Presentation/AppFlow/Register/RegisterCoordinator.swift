@@ -24,4 +24,8 @@ final class RegisterCoordinator: RegisterCoordinatoring, ObservableObject {
             self.nav.pop()
         }
     }
+    
+    deinit{
+        print("🚫🚫 RegisterCoordinator DESTRUIDO  🚫🚫")
+    }
 }

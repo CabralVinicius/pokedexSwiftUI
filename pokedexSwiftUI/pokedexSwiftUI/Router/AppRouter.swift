@@ -19,7 +19,7 @@ enum AppRoute: Hashable, Identifiable {
     var id: String { String(describing: self) }
 }
 
-struct AppRouter {
+struct AppRouter {    
     @ViewBuilder
     func view(for route: AppRoute) -> some View {
         switch route {
@@ -27,9 +27,10 @@ struct AppRouter {
             SplashView()
         case .onboarding:
             OnboardingView(viewModel: OnboardingViewModel())
-                .navigationBarBackButtonHidden(true)
+                //.navigationBarBackButtonHidden(true)
         case .loginOrRegister:
             LoginOrRegisterView(viewModel: LoginOrRegisterViewModel())
+                .navigationBarBackButtonHidden(true)
         case .register:
             RegisterView(viewModel: RegisterViewModel(), isLogin: false)
         case .login:
