@@ -25,6 +25,10 @@ final class RegisterCoordinator: RegisterCoordinatoring, ObservableObject {
         }
     }
     
+    func startRegister(){
+        self.nav.push(.SignUpView)
+    }
+    
     deinit{
         print("🚫🚫 RegisterCoordinator DESTRUIDO  🚫🚫")
     }

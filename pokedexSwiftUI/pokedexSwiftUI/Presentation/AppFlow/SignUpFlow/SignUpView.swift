@@ -9,58 +9,114 @@ import SwiftUI
 
 struct SignUpView: View {
     @ObservedObject var viewModel: SignUpViewModel
+    @EnvironmentObject var nav: AppNavigator
+    @FocusState private var fieldFocused: Bool
+    
     var body: some View {
-        VStack{
+        VStack(alignment: .center, spacing: 25) {
             Spacer().frame(height: 30)
-            Text("Vamos começar?")
-                .font(FontMaker.makeFont(.poppinsRegular, 26))
-            Text("Qual o seu email?")
-                .font(FontMaker.makeFont(.poppinsSemiBold, 26))
             
-            TextField("E-mail", text: $viewModel.user.email) { editChange in
-                viewModel.focusTextView = true
-            }
-            .autocorrectionDisabled()
-            .textInputAutocapitalization(.never)
-            .font(FontMaker.makeFont(.poppinsMedium, 16))
-            .padding(.horizontal, 16)
-            .padding()
-            .overlay {
-                RoundedRectangle(cornerRadius: 5)
-                    .stroke(lineWidth: 2.5)
-                    .foregroundStyle(viewModel.focusTextView ? .gray : .red)
-                    .frame(height: 52)
+            // Títulos
+            VStack(alignment: .center, spacing: 6) {
+                Text(viewModel.step.titleTop)
+                    .font(FontMaker.makeFont(.poppinsRegular, 26))
+                Text(viewModel.step.titleMain)
+                    .font(FontMaker.makeFont(.poppinsSemiBold, 26))
             }
             .padding(.horizontal, 16)
-            .padding()
+            .transition(.opacity.combined(with: .move(edge: .top)))
             
-            Text("User um endereço de email valido")
-                .font(FontMaker.makeFont(.poppinsRegular, 14))
-                .foregroundStyle(Color.gray)
+            // Campo
+            Group {
+                switch viewModel.step {
+                case .email:
+                    TextField(viewModel.step.placeholder, text: $viewModel.user.email) { editChange in
+                        viewModel.isFocused = true
+                    }
+                    .keyboardType(.emailAddress)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                    
+                case .password:
+                    HStack {
+                        if viewModel.showPassword {
+                            TextField(viewModel.step.placeholder, text: $viewModel.user.password)
+                        } else {
+                            SecureField(viewModel.step.placeholder, text: $viewModel.user.password)
+                        }
+                        Button {
+                            viewModel.showPassword.toggle()
+                        } label: {
+                            Image(systemName: viewModel.showPassword ? "eye.slash" : "eye")
+                                .foregroundStyle(ColorsNames.darkBlue)
+                        }
+                    }
+                    
+                case .name:
+                    TextField(viewModel.step.placeholder, text: $viewModel.user.name) { editChange in
+                        viewModel.isFocused = true
+                    }
+                    .textInputAutocapitalization(.words)
+                }
+            }
+            .padding(14)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(viewModel.isFocused ? ColorsNames.darkBlue : Color.gray.opacity(0.4), lineWidth: 2)
+            )
+            .padding(.horizontal, 16)
+            .transition(.move(edge: .trailing).combined(with: .opacity))
+            
+            Text(viewModel.step.helperText)
+                .font(.footnote)
+                .foregroundColor(.gray)
+                .padding(.horizontal, 16)
+                .transition(.opacity)
+            
             Spacer()
-            continueButton
-                
+            
+            // Botão
+            Button(action: handlePrimary) {
+                Text(viewModel.step.buttonTitle)
+                    .frame(maxWidth: .infinity, minHeight: 56)
+                    .font(.system(size: 18, weight: .semibold))
+            }
+            .disabled(!viewModel.isContinueEnabled)
+            .background(viewModel.isContinueEnabled ? ColorsNames.darkBlue : Color.gray.opacity(0.25))
+            .foregroundStyle(Color.white)
+            .clipShape(Capsule())
+            .padding(.horizontal, 16)
+            .padding(.bottom, 8)
+        }
+        .navToolbar(centerTitle: "Criar conta"){
+            SignUpCoordinator(nav: nav).back()
         }
     }
     
-    private var continueButton: some View {
-        CapsuleButton(
-            title: "Continuar",
-            style: .outline(stroke: Color.black.opacity(0.3),
-                            background: ColorsNames.darkBlue,
-                            foreground: .white),
-            height: 58,
-            font: FontMaker.makeFont(.poppinsSemiBold, 18),
-            iconSize: 22
-        ) {
-            // Action
-            print("teste")
+    private func handleBack() {
+        if viewModel.step == .email {
+            SignUpCoordinator(nav: nav).back()
+        } else {
+            viewModel.previousStep()
         }
-        .padding(.horizontal, 16)
-        .padding(.bottom, 5)
+    }
+    
+    private func handlePrimary() {
+        guard viewModel.isContinueEnabled else { return }
+        viewModel.isFocused = false
+        if viewModel.step == .name {
+            // dispara o cadastro real (service) e, no sucesso:
+            SignUpCoordinator(nav: nav).finishedSignUp(user: viewModel.user)
+        } else {
+            viewModel.nextStep()
+        }
     }
 }
 
+
 #Preview {
-    SignUpView(viewModel: SignUpViewModel(user: SignUpModel(name: "", email: "", password: "")))
+    let nav = AppNavigator()
+    let viewModel = SignUpViewModel()
+    SignUpView(viewModel: viewModel)
+        .environmentObject(nav)
 }
