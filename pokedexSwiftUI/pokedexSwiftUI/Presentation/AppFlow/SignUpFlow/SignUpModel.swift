@@ -5,7 +5,7 @@
 //  Created by Vinicius Cabral on 27/09/25.
 //
 
-struct SignUpModel {
+struct SignUpModel: Equatable {
     var name: String
     var email: String
     var password: String

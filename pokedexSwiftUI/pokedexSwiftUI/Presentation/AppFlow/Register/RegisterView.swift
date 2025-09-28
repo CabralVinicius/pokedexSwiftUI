@@ -88,7 +88,7 @@ extension RegisterView {
             height: 58,
             font: FontMaker.makeFont(.poppinsSemiBold, fontSize)
         ) {
-            // ação e-mail
+            RegisterCoordinator(nav: nav).startRegister() 
         }
         .padding(.horizontal, defaultPadding)
         .padding(.bottom, 5)
