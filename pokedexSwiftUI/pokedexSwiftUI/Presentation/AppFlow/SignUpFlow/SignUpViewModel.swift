@@ -48,14 +48,13 @@ enum SignUpStep: Int, CaseIterable {
 }
 
 // MARK: - ViewModel
+@MainActor
 final class SignUpViewModel: ObservableObject {
     @Published var user: SignUpModel = SignUpModel(name: "", email: "", password: "")
     @Published var step: SignUpStep = .email
     @Published var showPassword: Bool = false
-    @Published var isFocused: Bool = false
-    @Published var hasEditedCurrentField = false
+    @EnvironmentObject var nav: AppNavigator
     
-    // Validações por step
     var isContinueEnabled: Bool {
         switch step {
         case .email:
@@ -75,10 +74,6 @@ final class SignUpViewModel: ObservableObject {
     func previousStep() {
         guard let prev = SignUpStep(rawValue: step.rawValue - 1) else { return }
         withAnimation(.easeInOut) { step = prev }
-    }
-    
-    func resetPasswordVisibilityIfNeeded() {
-        if step != .password { showPassword = false }
     }
     
     private func isValidEmail(_ email: String) -> Bool {
