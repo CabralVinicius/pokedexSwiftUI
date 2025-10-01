@@ -14,37 +14,37 @@ enum SignUpStep: Int, CaseIterable {
     
     var titleTop: String {
         switch self {
-        case .email:    return "Vamos começar!"
-        case .password: return "Agora..."
-        case .name:     return "Pra finalizar"
+        case .email:    return "signup.titleTop.start"
+        case .password: return "signup.titleTop.now"
+        case .name:     return "signup.titleTop.finish"
         }
     }
     
     var titleMain: String {
         switch self {
-        case .email:    return "Qual é o seu e-mail?"
-        case .password: return "Crie uma senha"
-        case .name:     return "Qual é o seu nome?"
+        case .email:    return "signup.titleMain.email"
+        case .password: return "signup.titleMain.password"
+        case .name:     return "signup.titleMain.name"
         }
     }
     
     var helperText: String {
         switch self {
-        case .email:    return "Use um endereço de e-mail válido."
-        case .password: return "Sua senha deve ter pelo menos 8 caracteres."
-        case .name:     return "Esse será seu nome de usuário no aplicativo."
+        case .email:    return "signup.helper.email"
+        case .password: return "signup.helper.password"
+        case .name:     return "signup.helper.name"
         }
     }
     
     var placeholder: String {
         switch self {
-        case .email:    return "E-mail"
-        case .password: return "Senha"
-        case .name:     return "Nome"
+        case .email:    return "signup.placeholder.email"
+        case .password: return "signup.placeholder.password"
+        case .name:     return "signup.placeholder.name"
         }
     }
     
-    var buttonTitle: String { self == .name ? "Criar conta" : "Continuar" }
+    var buttonTitle: String { self == .name ? "auth.createAccount" : "common.continue" }
 }
 
 // MARK: - ViewModel

@@ -1,0 +1,34 @@
+"common.continue" = "Continue";
+"common.back" = "Back";
+"common.hello" = "Hello";
+
+"auth.welcome.title" = "Ready for this adventure?";
+"auth.welcome.description" = "Create an account and start exploring the world of Pokémon today!";
+"auth.createAccount" = "Create account";
+"auth.alreadyHaveAccount" = "I already have an account";
+"auth.continueWithApple" = "Continue with Apple";
+"auth.continueWithGoogle" = "Continue with Google";
+"auth.continueWithEmail" = "Continue with email";
+"auth.connect.how" = "How would you like to connect?";
+"auth.register.title" = "You're almost there to\nexplore this world!";
+"auth.login.title" = "Great to see you again!";
+"auth.register.titleBar" = "Sign up";
+"auth.login.titleBar" = "Login";
+
+"onboarding.step1.title" = "All Pokémon in one place";
+"onboarding.step1.description" = "Access a vast list of Pokémon from all generations released by Nintendo";
+"onboarding.step2.title" = "Keep your\nPokédex up to date";
+"onboarding.step2.description" = "Sign up and keep your profile, favorite Pokémon, settings and much more saved in the app, even offline.";
+
+"signup.titleTop.start" = "Let's get started!";
+"signup.titleTop.now" = "Now...";
+"signup.titleTop.finish" = "To finish";
+"signup.titleMain.email" = "What's your email?";
+"signup.titleMain.password" = "Create a password";
+"signup.titleMain.name" = "What's your name?";
+"signup.helper.email" = "Use a valid email address.";
+"signup.helper.password" = "Your password must be at least 8 characters.";
+"signup.helper.name" = "This will be your username in the app.";
+"signup.placeholder.email" = "Email";
+"signup.placeholder.password" = "Password";
+"signup.placeholder.name" = "Name";

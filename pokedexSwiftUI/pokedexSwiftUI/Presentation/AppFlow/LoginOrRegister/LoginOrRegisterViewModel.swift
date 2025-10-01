@@ -11,7 +11,7 @@ import Combine
 class LoginOrRegisterViewModel: ObservableObject {
     @Published var loginOrRegisterInformations: InfoTextKeys =
     InfoTextKeys(
-        titleKey: "Está pronto para essa aventura?",
-        descriptionKey: "Basta criar uma conta e começar a explorar o mundo dos Pokémon hoje!"
+        titleKey: "auth.welcome.title",
+        descriptionKey: "auth.welcome.description"
     )
 }

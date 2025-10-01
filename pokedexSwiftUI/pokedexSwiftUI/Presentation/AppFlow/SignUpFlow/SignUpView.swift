@@ -27,9 +27,9 @@ struct SignUpView: View {
             Spacer().frame(height: 30)
 
             VStack(alignment: .center, spacing: 6) {
-                Text(viewModel.step.titleTop)
+                Text(LocalizedStringKey(viewModel.step.titleTop))
                     .font(FontMaker.makeFont(.poppinsRegular, 26))
-                Text(viewModel.step.titleMain)
+                Text(LocalizedStringKey(viewModel.step.titleMain))
                     .font(FontMaker.makeFont(.poppinsSemiBold, 26))
             }
             .padding(.horizontal, 16)
@@ -38,7 +38,7 @@ struct SignUpView: View {
             Group {
                 switch viewModel.step {
                 case .email:
-                    TextField(viewModel.step.placeholder, text: $viewModel.user.email)
+                    TextField(LocalizedStringKey(viewModel.step.placeholder), text: $viewModel.user.email)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.never)
                         .textContentType(.emailAddress)
@@ -49,7 +49,7 @@ struct SignUpView: View {
 
                 case .password:
                     ZStack(alignment: .trailing) {
-                        TextField(viewModel.step.placeholder, text: $viewModel.user.password)
+                        TextField(LocalizedStringKey(viewModel.step.placeholder), text: $viewModel.user.password)
                             .opacity(viewModel.showPassword ? 1 : 0)
                             .focused($focused, equals: .password)
                             .submitLabel(.next)
@@ -58,7 +58,7 @@ struct SignUpView: View {
                             .autocorrectionDisabled(true)
 
 
-                        SecureField(viewModel.step.placeholder, text: $viewModel.user.password)
+                        SecureField(LocalizedStringKey(viewModel.step.placeholder), text: $viewModel.user.password)
                             .opacity(viewModel.showPassword ? 0 : 1)
                             .focused($focused, equals: .password)
                             .submitLabel(.next)
@@ -80,7 +80,7 @@ struct SignUpView: View {
                     }
 
                 case .name:
-                    TextField(viewModel.step.placeholder, text: $viewModel.user.name)
+                    TextField(LocalizedStringKey(viewModel.step.placeholder), text: $viewModel.user.name)
                         .textInputAutocapitalization(.words)
                         .focused($focused, equals: .name)
                         .submitLabel(.done)
@@ -99,15 +99,14 @@ struct SignUpView: View {
             .id(viewModel.step)
             .transition(.move(edge: .trailing).combined(with: .opacity))
 
-
-            Text(viewModel.step.helperText)
+            Text(LocalizedStringKey(viewModel.step.helperText))
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .padding(.horizontal, 16)
                 .transition(.opacity)
             Spacer()
             Button(action: handlePrimary) {
-                Text(viewModel.step.buttonTitle)
+                Text(LocalizedStringKey(viewModel.step.buttonTitle))
                     .frame(maxWidth: .infinity, minHeight: 56)
                     .font(.system(size: 18, weight: .semibold))
             }

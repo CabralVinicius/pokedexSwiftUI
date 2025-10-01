@@ -11,7 +11,7 @@ import Combine
 class OnboardingViewModel: ObservableObject {
     @Published var currentStep: Int = 0
     @Published var onboardingSteps: [InfoTextKeys] = [
-        InfoTextKeys(titleKey: "Todos os Pokémons em um só Lugar", descriptionKey: "Acesse uma vasta lista de Pokémon de todas as gerações já feitas pela Nintendo"),
-        InfoTextKeys(titleKey: "Mantenha sua\nPokédex atualizada", descriptionKey: "Cadastre-se e mantenha seu perfil, pokémon favoritos, configurações e muito mais, salvos no aplicativo, mesmo sem conexão com a internet.")
+        InfoTextKeys(titleKey: "onboarding.step1.title", descriptionKey: "onboarding.step1.description"),
+        InfoTextKeys(titleKey: "onboarding.step2.title", descriptionKey: "onboarding.step2.description")
     ]
 }

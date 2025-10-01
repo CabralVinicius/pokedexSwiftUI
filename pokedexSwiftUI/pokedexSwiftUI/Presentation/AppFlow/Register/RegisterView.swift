@@ -29,7 +29,7 @@ struct RegisterView: View {
             createAccountWithGoogle
             createAccountWithEmailAndPassword
         }
-        .navToolbar(centerTitle: isLogin ? "Cadastro" : "Login"){
+        .navToolbar(centerTitle: isLogin ? String(localized: "auth.register.titleBar") : String(localized: "auth.login.titleBar")){
             RegisterCoordinator(nav: nav).back()
         }
     }
@@ -48,7 +48,7 @@ struct RegisterView: View {
 extension RegisterView {
     private var createAccountWithApple: some View {
         CapsuleButton(
-            title: "Continuar com a Apple",
+            title: String(localized: "auth.continueWithApple"),
             icon: .system("apple.logo"),
             style: .outline(stroke: Color.black.opacity(0.3),
                             background: .white,
@@ -65,7 +65,7 @@ extension RegisterView {
     
     private var createAccountWithGoogle: some View {
         CapsuleButton(
-            title: "Continuar com a Google",
+            title: String(localized: "auth.continueWithGoogle"),
             icon: .image(Image("VectorGoogle")),
             style: .outline(stroke: Color.black.opacity(0.3),
                             background: .white,
@@ -74,7 +74,7 @@ extension RegisterView {
             font: FontMaker.makeFont(.poppinsSemiBold, fontSize),
             iconSize: 22
         ) {
-            print(isLogin ? "login" : "cadastro")
+            print(isLogin ? "login" : "register")
         }
         .padding(.horizontal, defaultPadding)
         .padding(.bottom, 5)
@@ -82,7 +82,7 @@ extension RegisterView {
     
     private var createAccountWithEmailAndPassword: some View {
         CapsuleButton(
-            title: "Continuar com um e-mail",
+            title: String(localized: "auth.continueWithEmail"),
             icon: nil,
             style: .filled(background: ColorsNames.darkBlue, foreground: .white),
             height: 58,
