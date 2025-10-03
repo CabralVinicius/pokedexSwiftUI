@@ -89,7 +89,7 @@ extension OnboardingView{
                 .clipShape(.capsule)
                 .foregroundStyle(ColorsNames.darkBlue)
                 .overlay {
-                    Text("Continuar")
+                    Text(LocalizedStringKey("common.continue"))
                         .foregroundStyle(.white)
                         .font(FontMaker.makeFont(.poppinsSemiBold, 18))
                 }

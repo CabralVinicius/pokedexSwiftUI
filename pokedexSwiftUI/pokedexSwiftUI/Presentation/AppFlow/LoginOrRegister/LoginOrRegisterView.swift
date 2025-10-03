@@ -24,7 +24,7 @@ struct LoginOrRegisterView: View {
             Spacer().frame(height: defaultPadding)
             registerAccount
         }
-        .navToolbar(leadingTitle: "Voltar") {
+        .navToolbar(leadingTitle: String(localized: "common.back")) {
             LoginOrRegisterCoordinator(nav: nav).back()
         }
     }
@@ -38,7 +38,7 @@ struct LoginOrRegisterView: View {
                 .clipShape(.capsule)
                 .foregroundStyle(ColorsNames.darkBlue)
                 .overlay {
-                    Text("Criar conta")
+                    Text(LocalizedStringKey("auth.createAccount"))
                         .foregroundStyle(.white)
                         .font(FontMaker.makeFont(.poppinsSemiBold, fontSize))
                 }
@@ -51,7 +51,7 @@ struct LoginOrRegisterView: View {
         Button(action: {
             LoginOrRegisterCoordinator(nav: nav).register()
         }, label: {
-            Text("Ja tenho uma conta")
+            Text(LocalizedStringKey("auth.alreadyHaveAccount"))
                 .foregroundStyle(ColorsNames.darkBlue)
                 .font(FontMaker.makeFont(.poppinsSemiBold, fontSize))
         })

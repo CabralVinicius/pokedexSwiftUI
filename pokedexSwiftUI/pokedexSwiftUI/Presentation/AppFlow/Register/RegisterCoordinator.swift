@@ -26,7 +26,7 @@ final class RegisterCoordinator: RegisterCoordinatoring, ObservableObject {
     }
     
     func startRegister(){
-        self.nav.push(.SignUpView)
+        self.nav.push(.signUp)
     }
     
     deinit{

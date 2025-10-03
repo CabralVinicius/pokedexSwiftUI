@@ -8,11 +8,6 @@
 import SwiftUI
 import Combine
 
-protocol SignUpCoordinatoring{
-    func back()
-    func finishedSignUp(user: SignUpModel)
-}
-
 final class SignUpCoordinator: SignUpCoordinatoring, ObservableObject {
     private let nav: AppNavigator
     
@@ -20,7 +15,7 @@ final class SignUpCoordinator: SignUpCoordinatoring, ObservableObject {
     
     func back() { withAnimation { nav.pop() } }
     
-    func finishedSignUp(user: SignUpModel) {
+    func finishedSignUp(user: some SignedInUser) {
         // Ex.: empurra próxima rota, ou troca root
         print("✅✅✅ FEZ O CADASTRO ✅✅✅")
         withAnimation { nav.popToRoot() }

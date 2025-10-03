@@ -13,12 +13,12 @@ struct TitleDescriptionView: View {
     
     var body: some View {
         VStack(spacing: 16) {
-            Text(title)
+            Text(LocalizedStringKey(title))
                 .font(Font.custom("Poppins-Medium", size: 26))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(Color("AppPrimary"))
 
-            Text(description)
+            Text(LocalizedStringKey(description))
                 .font(Font.custom("Poppins-Regular", size: 14))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(Color("AppSecondary"))
