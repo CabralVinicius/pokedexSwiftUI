@@ -9,16 +9,17 @@ import SwiftUI
 import Combine
 
 final class SplashCoordinator: ObservableObject {
-    private let nav: AppNavigator
+    var nav: AppNavigator?
     
-    init(nav: AppNavigator) {
-        self.nav = nav
+    init() {
+        // Coordinator será inicializado sem navigator e receberá via propriedade
     }
     
     func start() {
+        guard let nav = nav else { return }
         withAnimation {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.6) {
-                self.nav.setRoot(.onboarding)
+                nav.setRoot(.onboarding)
             }
         }
     }

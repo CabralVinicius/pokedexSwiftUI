@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SplashView: View {
     @EnvironmentObject var nav: AppNavigator
+    @StateObject private var coordinator = SplashCoordinator()
     
     var body: some View {
         ZStack{
@@ -19,7 +20,8 @@ struct SplashView: View {
         }
         .ignoresSafeArea()
         .onAppear {
-            SplashCoordinator(nav: nav).start()
+            coordinator.nav = nav
+            coordinator.start()
         }
     }
 }
