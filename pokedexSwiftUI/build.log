@@ -1,0 +1,1155 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build -project pokedexSwiftUI.xcodeproj -scheme pokedexSwiftUI -configuration Debug -destination "generic/platform=iOS Simulator" -derivedDataPath .build/DerivedData -showBuildTimingSummary -disableAutomaticPackageResolution
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'pokedexSwiftUI' in project 'pokedexSwiftUI' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/Assets.xcassets /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/MyColors.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 165cb897a2612dc488712f1fc3adc25f
+Build description path: /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/XCBuildData/165cb897a2612dc488712f1fc3adc25f.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache
+
+CreateBuildDirectory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    builtin-create-build-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products
+
+CreateBuildDirectory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    builtin-create-build-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    builtin-create-build-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    builtin-create-build-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    builtin-create-build-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    builtin-create-build-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI-d48cc9a57cb0c75c8a855da245fe9f38-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI.xcodeproj
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI-d48cc9a57cb0c75c8a855da245fe9f38-VFS-iphonesimulator/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.DependencyMetadataFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibPath-normal-x86_64.txt (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibPath-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.DependencyStaticMetadataFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-non-framework-target-headers.hmap (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.hmap (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.hmap
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibPath-normal-arm64.txt (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibInstallName-normal-x86_64.txt (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibInstallName-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibInstallName-normal-arm64.txt (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_const_extract_protocols.json (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftConstValuesFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.LinkFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.LinkFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-OutputFileMap.json (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_const_extract_protocols.json (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftConstValuesFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.LinkFileList (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.LinkFileList
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-OutputFileMap.json (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/Entitlements-Simulated.plist (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    write-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/Entitlements-Simulated.plist
+
+MkDir /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /bin/mkdir -p /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+ProcessProductPackaging "" /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "QNFKMB45Q9.cabral.vm.pokedexSwiftUI";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent
+
+ProcessProductPackagingDER /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent.der (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /usr/bin/derq query -f xml -i /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent.der --raw
+
+MkDir /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/unthinned (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /bin/mkdir -p /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/unthinned
+
+GenerateAssetSymbols /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/Assets.xcassets /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/MyColors.xcassets (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/Assets.xcassets /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/MyColors.xcassets --compile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_dependencies --output-partial-info-plist /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.0 --platform iphonesimulator --bundle-identifier cabral.vm.pokedexSwiftUI --generate-swift-asset-symbols /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CpResource /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Poppins-SemiBold.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-SemiBold.ttf (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-SemiBold.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+CpResource /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Poppins-Regular.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Regular.ttf (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Regular.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+CpResource /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Poppins-Medium.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Medium.ttf (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Medium.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+MkDir /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/thinned (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /bin/mkdir -p /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/thinned
+
+Ld /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/__preview.dylib normal x86_64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios26.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -O0 -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -install_name @rpath/pokedexSwiftUI.debug.dylib -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_dependency_info.dat -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/__preview.dylib
+
+Ld /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/__preview.dylib normal arm64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -O0 -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -install_name @rpath/pokedexSwiftUI.debug.dylib -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_dependency_info.dat -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/__preview.dylib
+
+CpResource /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Poppins-Light.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Light.ttf (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Light.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+CpResource /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Poppins-ExtraLight.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-ExtraLight.ttf (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-ExtraLight.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+CpResource /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Poppins-Bold.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Bold.ttf (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Fonts/Poppins-Bold.ttf /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+CopyStringsFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pt-BR.lproj/Localizable.strings /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/pt-BR.lproj/Localizable.strings (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pt-BR.lproj -- /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/pt-BR.lproj/Localizable.strings
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/pt-BR.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+CopyStringsFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/en.lproj/Localizable.strings /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/en.lproj/Localizable.strings (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/en.lproj -- /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/en.lproj/Localizable.strings
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/en.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+CompileAssetCatalogVariant thinned /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/Assets.xcassets /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/MyColors.xcassets (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/Assets.xcassets /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/MyColors.xcassets --compile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.0 --platform iphonesimulator
+objc[55917]: Class _NoAnimationDelegate is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23A343/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore (0x141aac130) and /Library/Developer/CoreSimulator/Volumes/iOS_23A343/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore (0x13ec15198). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+/* com.apple.actool.compilation-results */
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_generated_info.plist_thinned
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/thinned/Assets.car
+
+
+CreateUniversalBinary /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/__preview.dylib normal arm64\ x86_64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/__preview.dylib /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/__preview.dylib -output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/__preview.dylib
+
+SwiftDriver pokedexSwiftUI normal arm64 com.apple.xcode.tools.swift.compiler (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name pokedexSwiftUI -Onone -enforce-exclusivity\=checked @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -target arm64-apple-ios26.0-simulator -g -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache -output-file-map /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources-normal/arm64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/arm64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-Swift.h -working-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver pokedexSwiftUI normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name pokedexSwiftUI -Onone -enforce-exclusivity\=checked @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -target x86_64-apple-ios26.0-simulator -g -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache -output-file-map /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources-normal/x86_64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/x86_64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-Swift.h -working-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stddef-3K7UAWOV1K8AMMK5J4ZT3B57N.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdarg-534VHJNLV9KRNVS55K9DPJXL3.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/SwiftShims-5533DGP0N2X64XKLH2BAEU753.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ptrcheck-CDGWIR6YG9VNONWGVJDYYI7AE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdbool-BXCFLFTNZN0VU7D1ZNBP448D7.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/DeveloperToolsSupport-DA5CQDJRSW01P149UJ1MA4GPX.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_SwiftConcurrencyShims-BMQAYIALJHW7VFPXVOIJAFRVL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ptrauth-CEF4R2G2T1DGHXFOKAYWUXTDJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_float-8F1UX1LW7CW6XGAF1TUV3XNVI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdbool-1ZALTIZLIT0DDF7VL95FS6PGH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_SwiftConcurrencyShims-2VBMYXIQYF3ZS0DL2CQ0LMWOB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_float-9M94EIOW67323RNG9XQGYK8F0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/SwiftShims-9DYPVPZH6BPYYWIGAQ0N8WMXB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ptrauth-51VVGUE7CQ9POZAAB50KZL6ZZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stddef-DA3LXNDYGN7EW9H5SRQJ3U89I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ptrcheck-EL67BKHRUEF06EPEEHHYJQQ1H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_AvailabilityInternal-BGMKSVLIKY8DGFN1LDUNHN28R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdarg-239I2OT6NE9ZDKP1XU6F93JY9.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_AvailabilityInternal-6F2QKPN042I0AL55QPHVWYK20.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/DeveloperToolsSupport-ENPFNAJG5R7NZIMF6WNOJML34.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_DarwinFoundation1-2KMTVIIQ5YO4KGT6PE6KZ5I0Y.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_DarwinFoundation1-AEQHPFHLM62HJ80ZPX0JKU6PJ.pcm
+
+LinkAssetCatalog /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/Assets.xcassets /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Resources/Assets/MyColors.xcassets (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-linkAssetCatalog --thinned /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/thinned --thinned-dependencies /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_generated_info.plist_unthinned --output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app --plist-output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Assets.car (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+ProcessInfoPlistFile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Info.plist /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Info.plist (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-infoPlistUtility /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/assetcatalog_generated_info.plist -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_DarwinFoundation2-EQN9RPOBJ7418DWHQWLPZM8UP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_limits-6CL0YN0YXV9KMDCI4O21X4BAZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_limits-51DTPG5F8IKB1A1681XOGUQS2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_DarwinFoundation2-7KSCAZDSXSGJ5J1220DIA0Y4V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_tgmath-COAVOHK6LKSO8TTAVI2Y41R87.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdint-5KM1LUMW0R66TRR6YOWAWNN7M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/sys_types-5X9KFKMOOMEUARI7A7JKTHWAN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_tgmath-1I3VS18G0YRPUERAUVNSR4KDS.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/sys_types-AFO7ZOXQB73KVXNIJWIUTCS3A.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdint-FBSJPIO8VKVLZVQ3G2ZDVWG6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_DarwinFoundation3-7TA81TN5CCVPNRVE91C0C5HEL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdatomic-ARKWPPQCTK71W1HYDUSDOFWAH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_intrinsics-73YQWIMLMDJGYP2CHJ7AQILDF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_stdatomic-CFFHP2T1DZ28ZR6E1CCXGKVUN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_DarwinFoundation3-AAVKT7T9T1SEQSP49IYDZ5EHE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_inttypes-DV4WNGQ0DHQLO05E94HYT1XSL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_intrinsics-4GBYCNBGHXW0OW28LBC1INM0B.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/_Builtin_inttypes-BP3RJ8NRGQR83MAKHXO04FHC0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Darwin-BRVZDCHI6SBS7HDKR21YJA3QU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Darwin-7LTHZJ760WUYKJFVZGF7QIPC3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/simd-2TQWGZ58HSOA50LCU7S7283JO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/MachO-69MZPML0A8L0QRBO5WGQ4RWK8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ObjectiveC-2ZJK046KTPKPEBJ8K7I153SAJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/MachO-3FOXTDA0EB4AAZ1PFZTKIWYXV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ObjectiveC-6RGOB5KT8B4CR147NNLO9BQFQ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/simd-2SON03MSTBQ97TWRTCA8JBFI9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/os_object-6RFJ1KLCFOETNIFB1STKKM7WW.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/os_object-EML9TDAY439XAUH6D9BBGWKKO.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/os_workgroup-1YNZJ0M2RGP7NT1LBITFUBE1H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/os_workgroup-7656TAFYZNL2MW0K35QMOTO7D.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Dispatch-XVVS718UX15NFO7HTYZ93BEX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Dispatch-4XHPFV21Q6AU72FB42PJ2KO39.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Spatial-B7B7JUNGDCLBVNW5NL3TYR12N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/XPC-99WA4O3XSNLYSWX01FB5GN73B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreFoundation-9L6VC9PNJ1OZBR7Z2LJXJOJ7E.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreFoundation-69896VN21FWZ76MEMY250DHGZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/XPC-9EL8NOJYDX9D7BVFZ56JC7NA1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/os-722GMST58XVGICP18R8U6SA6I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/os-D3G7YJZHL4T20SMZJ1I1KCBS2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreGraphics-8MUJA5CID5XXJSC3IDRD25AMW.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Security-AKJ7AIW5O55UW4T6XQFPB2LL1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CFNetwork-BNE5DEARPNHQMI2HKX1L0D2V7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CFNetwork-53DJ8OSPWLL0X7S63L7MZ5UJ6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreGraphics-EZJU7SZ92Z2027M22M2K4YMIJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Security-6AGZIL1K20GL35NGJP98GBP3D.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Spatial-7ZOBNFJ8A2PR5CIRBXGBJAOQA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ImageIO-A38NTMF08FAKX2NCBD02NEQC3.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreText-3RIV6NK2S45XX88HGKY1Q5O6F.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Foundation-24SNGY0K8VO4DGS3JN54IBHT9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreText-DE9G23RWJQKLRQPLQ46T2FE24.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/ImageIO-4JEH4MPKZL55SJVUM8R3V47RY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Foundation-5FWYIA9RWGH3Y7E971SWNNOGF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/OSLog-4HTN3F8A1NGJYP0OSU2PJAMU3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/DataDetection-373W5YSPV7DUX84TJGBK1OGWE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Symbols-4SLZXXQNLYA11XJ9AKD96SS30.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Accessibility-8ZVN13RFETTQD0JNQNSGEX1V0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/IOSurface-5PRC3REF971FYCC312HIR6VII.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UserNotifications-285PGGU4OGA6Q5G5PJWGOBGAW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreTransferable-9FYKAOME4M3ENQIE85LZKGJIA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/FileProvider-6NLDT849R414O15GNK04B0LCO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UniformTypeIdentifiers-14YGJ2W6A1MEH58VMFU6KDKFR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/OpenGLES-BBKZDWL3OL1ZA8CG3C3KFRBQN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Accessibility-C5B62C2A22RJQ1NOLEY6HQVXN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Symbols-A5QTCMHTI9NFTPOWNDYFTCEH0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreData-HDIB3KYDK5NTY8TW31QN3VEY.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UniformTypeIdentifiers-AZIVI2PHFOXNRSVDADJ7O7RME.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UIUtilities-97152W16IFR1S94GWCTTK1J1R.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/DataDetection-887S4EDE20CGDA3HIXABWXHPU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreData-6YMX0TZTXT01QHK0OA7T8PR37.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UIUtilities-1NH28CM6GB2IZD3PGH29C5QPV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/IOSurface-8FU6JEVWIGCBINK32MQ5EX2ZZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/FileProvider-7XH78AQEXRIFODP6WB70895OH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/OSLog-ANC3HHV4SA6LOZWYXXUFVPK0H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/OpenGLES-3XNT9WBWBAMT1W99PXI9W1LSV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UserNotifications-D3IP53U9MIMI1HJZTEOHJ7XHA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreTransferable-E2YDC7ZAXXJCWEJQ8YG174AP3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Metal-1IWX3703QKYADNPIARLDC9R1W.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Metal-EYZV7Z5JQ02LO47TTRC5TLUWP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreVideo-C91UT71KMOYI34O82WNILL6U8.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreVideo-DP64IVTWVWKEWY3IK5GW2NYES.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/QuartzCore-ASKS5CJPY6M4ID3AXG6UCOE1E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreImage-ACC3DXIP4521PMY0EU9YRHPM6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/CoreImage-41K8E07S5K2Q5P6DFBBHN85D0.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/QuartzCore-3R3R9IUWBG8I1OPL5XB36Z7S6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/SwiftUICore-DP1GPH5Y44IGTXQ3TLHEI6M7Q.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/SwiftUICore-EV7R0I54AY05POQ8AF7V99JBU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UIKit-6XJFSSUTAFRNHCOWEL3RPUBAQ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/UIKit-DMQOX3DH8RKE0B96MGPHD8VWV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/SwiftUI-6P46QVQRF1E1ZIM8VUPZYP0JK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/SwiftUI-2BJ28JD1JP7GJGNE6BDXGQOQ4.pcm
+
+SwiftCompile normal x86_64 Compiling\ ContentView.swift,\ pokedexSwiftUIApp.swift,\ GeneratedAssetSymbols.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/ContentView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUIApp.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/ContentView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUIApp.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 Compiling\ SplashView.swift,\ AppNavigator.swift,\ AppRouter.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppNavigator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppRouter.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppNavigator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppRouter.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift:62:37: warning: call to main actor-isolated initializer 'init(session:baseURL:)' in a synchronous nonisolated context
+    init(service: SignUpServicing = SignUpService()) {
+                                    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: calls to initializer 'init(session:baseURL:)' from outside of its actor context are implicitly asynchronous
+    init(session: URLSession = .shared,
+    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: main actor isolation inferred from conformance to protocol 'SignUpServicing'
+    init(session: URLSession = .shared,
+    ^
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ pokedexSwiftUI (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+EmitSwiftModule normal x86_64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift:62:37: warning: call to main actor-isolated initializer 'init(session:baseURL:)' in a synchronous nonisolated context
+    init(service: SignUpServicing = SignUpService()) {
+                                    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: calls to initializer 'init(session:baseURL:)' from outside of its actor context are implicitly asynchronous
+    init(session: URLSession = .shared,
+    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: main actor isolation inferred from conformance to protocol 'SignUpServicing'
+    init(session: URLSession = .shared,
+    ^
+
+SwiftCompile normal x86_64 Compiling\ FontNames.swift,\ CapsuleButton.swift,\ MakeTrainingImage.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/FontNames.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/CapsuleButton.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/MakeTrainingImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/FontNames.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/CapsuleButton.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/MakeTrainingImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 Compiling\ NavToolbarModifier.swift,\ TitleDescriptionView.swift,\ InfoTextKeys.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/NavToolbarModifier.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/TitleDescriptionView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/Models/InfoTextKeys.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/NavToolbarModifier.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/TitleDescriptionView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/Models/InfoTextKeys.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 Compiling\ RootHostView.swift,\ ColorsNames.swift,\ ComponentsImage.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/RootHostView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ColorsNames.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ComponentsImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/RootHostView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ColorsNames.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ComponentsImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 Compiling\ SignUpRequest.swift,\ SignUpService.swift,\ User.swift,\ SignedInUser.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/DTO/SignUpRequest.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Entities/User.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignedInUser.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/DTO/SignUpRequest.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Entities/User.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignedInUser.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 Compiling\ OnboardingCoordinator.swift,\ OnboardingView.swift,\ OnboardingViewModel.swift,\ RegisterCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 Compiling\ SignUpCoordinatoring.swift,\ LoginOrRegisterCoordinator.swift,\ LoginOrRegisterView.swift,\ LoginOrRegisterViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignUpCoordinatoring.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignUpCoordinatoring.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 Compiling\ RegisterView.swift,\ RegisterViewModel.swift,\ SignUpCoordinator.swift,\ SignUpModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ pokedexSwiftUI (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+EmitSwiftModule normal arm64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift:62:37: warning: call to main actor-isolated initializer 'init(session:baseURL:)' in a synchronous nonisolated context
+    init(service: SignUpServicing = SignUpService()) {
+                                    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: calls to initializer 'init(session:baseURL:)' from outside of its actor context are implicitly asynchronous
+    init(session: URLSession = .shared,
+    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: main actor isolation inferred from conformance to protocol 'SignUpServicing'
+    init(session: URLSession = .shared,
+    ^
+
+SwiftDriverJobDiscovery normal x86_64 Emitting module for pokedexSwiftUI (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriver\ Compilation\ Requirements pokedexSwiftUI normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name pokedexSwiftUI -Onone -enforce-exclusivity\=checked @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -target x86_64-apple-ios26.0-simulator -g -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache -output-file-map /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources-normal/x86_64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/x86_64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-Swift.h -working-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for pokedexSwiftUI (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriver\ Compilation\ Requirements pokedexSwiftUI normal arm64 com.apple.xcode.tools.swift.compiler (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name pokedexSwiftUI -Onone -enforce-exclusivity\=checked @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -target arm64-apple-ios26.0-simulator -g -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache -output-file-map /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources-normal/arm64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/arm64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-Swift.h -working-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftmodule (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftmodule /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+SwiftMergeGeneratedHeaders /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/pokedexSwiftUI-Swift.h /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-Swift.h /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-Swift.h (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-swiftHeaderTool -arch arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-Swift.h -arch x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-Swift.h -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/pokedexSwiftUI-Swift.h
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftdoc (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftdoc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.abi.json (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.abi.json /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftmodule (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftmodule /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftdoc (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftdoc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.abi.json (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.abi.json /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftsourceinfo (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftsourceinfo /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftsourceinfo (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftsourceinfo /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ NavToolbarModifier.swift,\ TitleDescriptionView.swift,\ InfoTextKeys.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/NavToolbarModifier.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/TitleDescriptionView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/Models/InfoTextKeys.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/NavToolbarModifier.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/TitleDescriptionView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/Models/InfoTextKeys.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 Compiling\ OnboardingCoordinator.swift,\ OnboardingView.swift,\ OnboardingViewModel.swift,\ RegisterCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Onboarding/OnboardingViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling SignUpRequest.swift, SignUpService.swift, User.swift, SignedInUser.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 Compiling\ FontNames.swift,\ CapsuleButton.swift,\ MakeTrainingImage.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/FontNames.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/CapsuleButton.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/MakeTrainingImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/FontNames.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/CapsuleButton.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/ViewComponents/MakeTrainingImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling RootHostView.swift, ColorsNames.swift, ComponentsImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift,\ pokedexSwiftUIApp.swift,\ GeneratedAssetSymbols.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/ContentView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUIApp.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/ContentView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUIApp.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling SplashView.swift, AppNavigator.swift, AppRouter.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 Compiling\ SplashView.swift,\ AppNavigator.swift,\ AppRouter.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppNavigator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppRouter.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppNavigator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/AppRouter.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift:62:37: warning: call to main actor-isolated initializer 'init(session:baseURL:)' in a synchronous nonisolated context
+    init(service: SignUpServicing = SignUpService()) {
+                                    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: calls to initializer 'init(session:baseURL:)' from outside of its actor context are implicitly asynchronous
+    init(session: URLSession = .shared,
+    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: main actor isolation inferred from conformance to protocol 'SignUpServicing'
+    init(session: URLSession = .shared,
+    ^
+
+SwiftDriverJobDiscovery normal x86_64 Compiling FontNames.swift, CapsuleButton.swift, MakeTrainingImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 Compiling\ SignUpRequest.swift,\ SignUpService.swift,\ User.swift,\ SignedInUser.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/DTO/SignUpRequest.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Entities/User.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignedInUser.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/DTO/SignUpRequest.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Entities/User.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignedInUser.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling SignUpCoordinatoring.swift, LoginOrRegisterCoordinator.swift, LoginOrRegisterView.swift, LoginOrRegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal x86_64 Compiling RegisterView.swift, RegisterViewModel.swift, SignUpCoordinator.swift, SignUpModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 Compiling\ RootHostView.swift,\ ColorsNames.swift,\ ComponentsImage.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/RootHostView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ColorsNames.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ComponentsImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Router/RootHostView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ColorsNames.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Shared/DesignSystem/DesignTokens/ComponentsImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 Compiling\ SignUpView.swift,\ SignUpViewModel.swift,\ SplashCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift:62:37: warning: call to main actor-isolated initializer 'init(session:baseURL:)' in a synchronous nonisolated context
+    init(service: SignUpServicing = SignUpService()) {
+                                    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: calls to initializer 'init(session:baseURL:)' from outside of its actor context are implicitly asynchronous
+    init(session: URLSession = .shared,
+    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: main actor isolation inferred from conformance to protocol 'SignUpServicing'
+    init(session: URLSession = .shared,
+    ^
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 Compiling\ RegisterView.swift,\ RegisterViewModel.swift,\ SignUpCoordinator.swift,\ SignUpModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Register/RegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling ContentView.swift, pokedexSwiftUIApp.swift, GeneratedAssetSymbols.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 Compiling\ SignUpCoordinatoring.swift,\ LoginOrRegisterCoordinator.swift,\ LoginOrRegisterView.swift,\ LoginOrRegisterViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignUpCoordinatoring.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Domain/Protocols/SignUpCoordinatoring.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal arm64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/LoginOrRegister/LoginOrRegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling OnboardingCoordinator.swift, OnboardingView.swift, OnboardingViewModel.swift, RegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal x86_64 Compiling NavToolbarModifier.swift, TitleDescriptionView.swift, InfoTextKeys.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftCompile normal x86_64 Compiling\ SignUpView.swift,\ SignUpViewModel.swift,\ SplashCoordinator.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpView.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpView.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/SignUpFlow/SignUpViewModel.swift:62:37: warning: call to main actor-isolated initializer 'init(session:baseURL:)' in a synchronous nonisolated context
+    init(service: SignUpServicing = SignUpService()) {
+                                    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: calls to initializer 'init(session:baseURL:)' from outside of its actor context are implicitly asynchronous
+    init(session: URLSession = .shared,
+    ^
+/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Data/Auth/Services/SignUpService.swift:24:5: note: main actor isolation inferred from conformance to protocol 'SignUpServicing'
+    init(session: URLSession = .shared,
+    ^
+
+SwiftCompile normal x86_64 /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/pokedexSwiftUI/Presentation/AppFlow/Splash/SplashCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling SignUpRequest.swift, SignUpService.swift, User.swift, SignedInUser.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling RootHostView.swift, ColorsNames.swift, ComponentsImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling OnboardingCoordinator.swift, OnboardingView.swift, OnboardingViewModel.swift, RegisterCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling NavToolbarModifier.swift, TitleDescriptionView.swift, InfoTextKeys.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling FontNames.swift, CapsuleButton.swift, MakeTrainingImage.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ContentView.swift, pokedexSwiftUIApp.swift, GeneratedAssetSymbols.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling RegisterView.swift, RegisterViewModel.swift, SignUpCoordinator.swift, SignUpModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SplashView.swift, AppNavigator.swift, AppRouter.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SignUpCoordinatoring.swift, LoginOrRegisterCoordinator.swift, LoginOrRegisterView.swift, LoginOrRegisterViewModel.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SignUpView.swift, SignUpViewModel.swift, SplashCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriver\ Compilation pokedexSwiftUI normal arm64 com.apple.xcode.tools.swift.compiler (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name pokedexSwiftUI -Onone -enforce-exclusivity\=checked @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -target arm64-apple-ios26.0-simulator -g -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache -output-file-map /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources-normal/arm64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/arm64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-Swift.h -working-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI.debug.dylib normal arm64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -O0 -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.LinkFileList -install_name @rpath/pokedexSwiftUI.debug.dylib -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.swiftmodule @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI.debug.dylib
+
+SwiftDriverJobDiscovery normal x86_64 Compiling SignUpView.swift, SignUpViewModel.swift, SplashCoordinator.swift (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+SwiftDriver\ Compilation pokedexSwiftUI normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name pokedexSwiftUI -Onone -enforce-exclusivity\=checked @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -target x86_64-apple-ios26.0-simulator -g -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache -output-file-map /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-generated-files.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-own-target-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-project-headers.hmap -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources-normal/x86_64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources/x86_64 -Xcc -I/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-Swift.h -working-directory /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI.debug.dylib normal x86_64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios26.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -O0 -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.LinkFileList -install_name @rpath/pokedexSwiftUI.debug.dylib -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.swiftmodule @/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-ExecutorLinkFileList-normal-arm64.txt (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    construct-stub-executor-link-file-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+Ld /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI normal arm64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -O0 -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-ExecutorLinkFileList-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent.der /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI.debug.dylib -Xlinker -no_adhoc_codesign -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI
+
+CreateUniversalBinary /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI.debug.dylib normal arm64\ x86_64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI.debug.dylib /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI.debug.dylib -output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-ExecutorLinkFileList-normal-x86_64.txt (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    construct-stub-executor-link-file-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-ExecutorLinkFileList-normal-x86_64.txt
+note: Using stub executor library with Swift entry point. (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+
+Ld /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI normal x86_64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios26.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -O0 -L/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibPath-normal-x86_64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-DebugDylibInstallName-normal-x86_64.txt -Xlinker -filelist -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI-ExecutorLinkFileList-normal-x86_64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.app-Simulated.xcent.der /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI.debug.dylib -Xlinker -no_adhoc_codesign -o /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI
+
+CreateUniversalBinary /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI normal arm64\ x86_64 (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/Binary/pokedexSwiftUI /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/Binary/pokedexSwiftUI -output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI
+
+ExtractAppIntentsMetadata (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name pokedexSwiftUI --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk --xcode-version 17A400 --platform-family iOS --deployment-target 26.0 --bundle-identifier cabral.vm.pokedexSwiftUI --output /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app --target-triple arm64-apple-ios26.0-simulator --target-triple x86_64-apple-ios26.0-simulator --binary-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI --dependency-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI_dependency_info.dat --dependency-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI_dependency_info.dat --stringsdata-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --stringsdata-file /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftFileList --source-file-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftFileList --metadata-file-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.DependencyMetadataFileList --static-metadata-file-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.DependencyStaticMetadataFileList --swift-const-vals-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/arm64/pokedexSwiftUI.SwiftConstValuesFileList --swift-const-vals-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/Objects-normal/x86_64/pokedexSwiftUI.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2025-10-03 21:31:50.149 appintentsmetadataprocessor[56264:275818] Starting appintentsmetadataprocessor export
+2025-10-03 21:31:50.151 appintentsmetadataprocessor[56264:275818] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI.debug.dylib --scan-folder /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Frameworks --scan-folder /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/PlugIns --scan-folder /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/SystemExtensions --scan-folder /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+AppIntentsSSUTraining (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Info.plist --temp-dir-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/ssu --bundle-id cabral.vm.pokedexSwiftUI --product-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app --extracted-metadata-path /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/Metadata.appintents --metadata-file-list /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/pokedexSwiftUI.build/Debug-iphonesimulator/pokedexSwiftUI.build/pokedexSwiftUI.DependencyMetadataFileList --archive-ssu-assets
+2025-10-03 21:31:50.163 appintentsnltrainingprocessor[56266:275823] Parsing options for appintentsnltrainingprocessor
+2025-10-03 21:31:50.163 appintentsnltrainingprocessor[56266:275823] No AppShortcuts found - Skipping.
+
+CodeSign /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI.debug.dylib (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/pokedexSwiftUI.debug.dylib
+
+CodeSign /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/__preview.dylib (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app/__preview.dylib
+
+CodeSign /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+RegisterExecutionPolicyException /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-RegisterExecutionPolicyException /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+Validate /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    builtin-validationUtility /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app (in target 'pokedexSwiftUI' from project 'pokedexSwiftUI')
+    cd /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI
+    /usr/bin/touch -c /Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Products/Debug-iphonesimulator/pokedexSwiftUI.app
+
+GenerateSwiftModulesReport
+Accessibility (Clang): 2 variants
+CFNetwork (Clang): 2 variants
+CoreData (Clang): 2 variants
+CoreFoundation (Clang): 2 variants
+CoreGraphics (Clang): 2 variants
+CoreImage (Clang): 2 variants
+CoreText (Clang): 2 variants
+CoreTransferable (Clang): 2 variants
+CoreVideo (Clang): 2 variants
+Darwin (Clang): 2 variants
+DataDetection (Clang): 2 variants
+DeveloperToolsSupport (Clang): 2 variants
+Dispatch (Clang): 2 variants
+FileProvider (Clang): 2 variants
+Foundation (Clang): 2 variants
+IOSurface (Clang): 2 variants
+ImageIO (Clang): 2 variants
+MachO (Clang): 2 variants
+Metal (Clang): 2 variants
+OSLog (Clang): 2 variants
+ObjectiveC (Clang): 2 variants
+OpenGLES (Clang): 2 variants
+QuartzCore (Clang): 2 variants
+Security (Clang): 2 variants
+Spatial (Clang): 2 variants
+SwiftShims (Clang): 2 variants
+SwiftUI (Clang): 2 variants
+SwiftUICore (Clang): 2 variants
+Symbols (Clang): 2 variants
+UIKit (Clang): 2 variants
+UIUtilities (Clang): 2 variants
+UniformTypeIdentifiers (Clang): 2 variants
+UserNotifications (Clang): 2 variants
+XPC (Clang): 2 variants
+_AvailabilityInternal (Clang): 2 variants
+_Builtin_float (Clang): 2 variants
+_Builtin_intrinsics (Clang): 2 variants
+_Builtin_inttypes (Clang): 2 variants
+_Builtin_limits (Clang): 2 variants
+_Builtin_stdarg (Clang): 2 variants
+_Builtin_stdatomic (Clang): 2 variants
+_Builtin_stdbool (Clang): 2 variants
+_Builtin_stddef (Clang): 2 variants
+_Builtin_stdint (Clang): 2 variants
+_Builtin_tgmath (Clang): 2 variants
+_DarwinFoundation1 (Clang): 2 variants
+_DarwinFoundation2 (Clang): 2 variants
+_DarwinFoundation3 (Clang): 2 variants
+_SwiftConcurrencyShims (Clang): 2 variants
+os (Clang): 2 variants
+os_object (Clang): 2 variants
+os_workgroup (Clang): 2 variants
+ptrauth (Clang): 2 variants
+ptrcheck (Clang): 2 variants
+simd (Clang): 2 variants
+sys_types (Clang): 2 variants
+
+Full report written to '/Users/viniciuscabral/Developer/pokedexSwiftUI/pokedexSwiftUI/.build/DerivedData/Build/Intermediates.noindex/XCBuildData/swiftmodulesreport'
+Build Timing Summary
+
+SwiftCompile (20 tasks) | 37.602 seconds
+
+SwiftDriver (2 tasks) | 0.890 seconds
+
+SwiftEmitModule (2 tasks) | 0.733 seconds
+
+CompileAssetCatalogVariant (1 task) | 0.640 seconds
+
+Ld (6 tasks) | 0.473 seconds
+
+CodeSign (3 tasks) | 0.030 seconds
+
+CopySwiftLibs (1 task) | 0.016 seconds
+
+ExtractAppIntentsMetadata (1 task) | 0.015 seconds
+
+GenerateAssetSymbols (1 task) | 0.012 seconds
+
+Copy (8 tasks) | 0.012 seconds
+
+AppIntentsSSUTraining (1 task) | 0.012 seconds
+
+RegisterExecutionPolicyException (1 task) | 0.010 seconds
+
+CpResource (6 tasks) | 0.007 seconds
+
+ProcessInfoPlistFile (1 task) | 0.006 seconds
+
+CopyStringsFile (2 tasks) | 0.005 seconds
+
+CreateUniversalBinary (3 tasks) | 0.005 seconds
+
+WriteAuxiliaryFile (23 tasks) | 0.005 seconds
+
+LinkAssetCatalog (1 task) | 0.002 seconds
+
+ProcessProductPackagingDER (1 task) | 0.002 seconds
+
+SwiftDriver Compilation Requirements (2 tasks) | 0.002 seconds
+
+ConstructStubExecutorLinkFileList (2 tasks) | 0.001 seconds
+
+Touch (1 task) | 0.001 seconds
+
+SwiftDriver Compilation (2 tasks) | 0.001 seconds
+
+SwiftMergeGeneratedHeaders (1 task) | 0.000 seconds
+
+ProcessProductPackaging (1 task) | 0.000 seconds
+
+Validate (1 task) | 0.000 seconds
+
+** BUILD SUCCEEDED **
+
