@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "379A617A-11EF-4F86-BF38-9495AFEE1F58",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:pokedexSwiftUI.xcodeproj",
+      "identifier" : "19C3B0F82E7600DE00BD39DB",
+      "name" : "pokedexSwiftUI"
+    },
+    "uiTestingScreenshotsLifetime" : "keepNever"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:pokedexSwiftUI.xcodeproj",
+        "identifier" : "197C314E2E90E4F900256510",
+        "name" : "pokedexSwiftUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
