@@ -58,9 +58,12 @@ final class SignUpViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
     private let service: SignUpServicing
+    private let animator: StepAnimator
 
-    init(service: SignUpServicing = SignUpService()) {
+    init(service: SignUpServicing = SignUpService(),
+         animator: StepAnimator = .animated) {
         self.service = service
+        self.animator = animator
     }
 
     var isContinueEnabled: Bool {
@@ -80,12 +83,12 @@ final class SignUpViewModel: ObservableObject {
 
     func nextStep() {
         guard let next = SignUpStep(rawValue: step.rawValue + 1) else { return }
-        withAnimation(.easeInOut) { step = next }
+        animator.run { self.step = next }
     }
 
     func previousStep() {
         guard let prev = SignUpStep(rawValue: step.rawValue - 1) else { return }
-        withAnimation(.easeInOut) { step = prev }
+        animator.run { self.step = prev }
     }
 
     func submit() async -> User? {
@@ -128,5 +131,18 @@ extension SignUpViewModel{
     func submitMockUser() -> User {
         let user = User(id: "1234", email: "1@1.com", name: "Zé Maria")
         return user
+    }
+}
+
+struct StepAnimator {
+    var run: (_ updates: @escaping () -> Void) -> Void
+}
+
+extension StepAnimator {
+    static let animated = StepAnimator { updates in
+        withAnimation(.easeInOut, updates)
+    }
+    static let none = StepAnimator { updates in
+        updates()
     }
 }
