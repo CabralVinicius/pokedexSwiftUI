@@ -16,10 +16,10 @@ struct LoginOrRegisterView: View {
     
     var body: some View {
         VStack{
-            Spacer().frame(height: 175)
+            Spacer().frame(height: 120)
             MakeTrainingImage(firstImage: ImageKey.femaleCoachTwo.rawValue, secondImage: ImageKey.maleCoachThree.rawValue)
             TitleDescriptionView(title: viewModel.loginOrRegisterInformations.titleKey, description: viewModel.loginOrRegisterInformations.descriptionKey)
-            Spacer().frame(height: 45)
+            Spacer().frame(height: 35)
             loginAccount
             Spacer().frame(height: defaultPadding)
             registerAccount

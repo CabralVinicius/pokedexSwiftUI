@@ -23,13 +23,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		197C315C2E90E5D400256510 /* Exceptions for "pokedexSwiftUITests" folder in "pokedexSwiftUI" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Data/SignUpRequestTests.swift,
-			);
-			target = 19C3B0F82E7600DE00BD39DB /* pokedexSwiftUI */;
-		};
 		19C3B12D2E760A4500BD39DB /* Exceptions for "pokedexSwiftUI" folder in "pokedexSwiftUI" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -42,9 +35,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		197C31502E90E4F900256510 /* pokedexSwiftUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				197C315C2E90E5D400256510 /* Exceptions for "pokedexSwiftUITests" folder in "pokedexSwiftUI" target */,
-			);
 			path = pokedexSwiftUITests;
 			sourceTree = "<group>";
 		};

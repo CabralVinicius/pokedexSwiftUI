@@ -10,6 +10,8 @@ import Combine
 
 protocol RegisterCoordinatoring{
     func back()
+    func startRegister()
+    func startLogin()
 }
 
 final class RegisterCoordinator: RegisterCoordinatoring, ObservableObject {
@@ -27,6 +29,10 @@ final class RegisterCoordinator: RegisterCoordinatoring, ObservableObject {
     
     func startRegister(){
         self.nav.push(.signUp)
+    }
+    
+    func startLogin() {
+        self.nav.push(.makeLogin)
     }
     
     deinit{

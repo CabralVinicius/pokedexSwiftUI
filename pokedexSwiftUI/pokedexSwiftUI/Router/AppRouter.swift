@@ -14,6 +14,7 @@ enum AppRoute: Hashable, Identifiable {
     case register
     case login
     case signUp
+    case makeLogin
     // case home
     // case pokemonDetail(id: Int)
 
@@ -33,11 +34,13 @@ struct AppRouter {
             LoginOrRegisterView(viewModel: LoginOrRegisterViewModel())
                 .navigationBarBackButtonHidden(true)
         case .register:
-            RegisterView(viewModel: RegisterViewModel(), isLogin: false)
+            RegisterView(viewModel: RegisterViewModel(), register: false)
         case .login:
-            RegisterView(viewModel: RegisterViewModel(), isLogin: true)
+            RegisterView(viewModel: RegisterViewModel(), register: true)
         case .signUp:
             SignUpView(viewModel: SignUpViewModel())
+        case .makeLogin:
+            LoginView()
         }
     }
 }

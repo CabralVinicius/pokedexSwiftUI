@@ -11,7 +11,7 @@
 "auth.continueWithEmail" = "Continuar com um e-mail";
 "auth.connect.how" = "Como deseja se conectar?";
 "auth.register.title" = "Falta pouco para\nexplorar esse mundo!";
-"auth.login.title" = "Que bom te ver aqui novamente!";
+"auth.login.title" = "Que bom te ver aqui\nnovamente!";
 "auth.register.titleBar" = "Cadastro";
 "auth.login.titleBar" = "Login";
 
