@@ -34,13 +34,13 @@ struct AppRouter {
             LoginOrRegisterView(viewModel: LoginOrRegisterViewModel())
                 .navigationBarBackButtonHidden(true)
         case .register:
-            RegisterView(viewModel: RegisterViewModel(), register: false)
-        case .login:
             RegisterView(viewModel: RegisterViewModel(), register: true)
+        case .login:
+            RegisterView(viewModel: RegisterViewModel(), register: false)
         case .signUp:
             SignUpView(viewModel: SignUpViewModel())
         case .makeLogin:
-            LoginView()
+            LoginView(viewModel: LoginViewModel())
         }
     }
 }

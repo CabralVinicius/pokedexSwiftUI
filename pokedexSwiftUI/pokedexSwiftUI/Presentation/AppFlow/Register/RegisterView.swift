@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// tela generica login BONECO VERMELHO  ou cadastro BONECO BRANCO -> remover os comentarios depois
 struct RegisterView: View {
     @ObservedObject var viewModel: RegisterViewModel
     @EnvironmentObject var nav: AppNavigator

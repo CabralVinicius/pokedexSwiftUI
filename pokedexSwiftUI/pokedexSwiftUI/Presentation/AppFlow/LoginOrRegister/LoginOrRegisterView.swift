@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//tela de registro ou cadastro
 struct LoginOrRegisterView: View {
     @ObservedObject var viewModel: LoginOrRegisterViewModel
     @EnvironmentObject var nav: AppNavigator
@@ -20,18 +20,18 @@ struct LoginOrRegisterView: View {
             MakeTrainingImage(firstImage: ImageKey.femaleCoachTwo.rawValue, secondImage: ImageKey.maleCoachThree.rawValue)
             TitleDescriptionView(title: viewModel.loginOrRegisterInformations.titleKey, description: viewModel.loginOrRegisterInformations.descriptionKey)
             Spacer().frame(height: 35)
-            loginAccount
+            registerNewAccount
             Spacer().frame(height: defaultPadding)
-            registerAccount
+            loginAccount
         }
         .navToolbar(leadingTitle: String(localized: "common.back")) {
             LoginOrRegisterCoordinator(nav: nav).back()
         }
     }
 
-    private var loginAccount: some View {
+    private var registerNewAccount: some View {
         Button(action: {
-            LoginOrRegisterCoordinator(nav: nav).login()
+            LoginOrRegisterCoordinator(nav: nav).register()
         }, label: {
             Rectangle()
                 .frame(height: 58)
@@ -47,9 +47,9 @@ struct LoginOrRegisterView: View {
         })
     }
     
-    private var registerAccount: some View {
+    private var loginAccount: some View {
         Button(action: {
-            LoginOrRegisterCoordinator(nav: nav).register()
+            LoginOrRegisterCoordinator(nav: nav).login()
         }, label: {
             Text(LocalizedStringKey("auth.alreadyHaveAccount"))
                 .foregroundStyle(ColorsNames.darkBlue)

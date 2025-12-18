@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 @MainActor
-class RegisterViewModel: ObservableObject {
+final class RegisterViewModel: ObservableObject {
     @Published var currentSteps = 0
     @Published var loginOrRegisterInformations: [InfoTextKeys]
     

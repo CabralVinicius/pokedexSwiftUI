@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class LoginOrRegisterViewModel: ObservableObject {
+final class LoginOrRegisterViewModel: ObservableObject {
     @Published var loginOrRegisterInformations: InfoTextKeys =
     InfoTextKeys(
         titleKey: "auth.welcome.title",
