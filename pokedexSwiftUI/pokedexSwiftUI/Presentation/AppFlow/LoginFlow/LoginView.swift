@@ -81,7 +81,7 @@ struct LoginView: View {
                 // TODO: recuperar senha
             }) {
                 Text("Esqueceu sua senha?")
-                    .font(FontMaker.makeFont(.poppinsRegular, 16))
+                    .font(FontMaker.makeFont(.poppinsRegular, 17))
                     .foregroundColor(ColorsNames.darkBlue)
                     .transition(.opacity)
                     .frame(maxWidth: .infinity, alignment: .center)
